@@ -1,0 +1,57 @@
+{% extends 'base.html' %} {% block content %}
+
+<table>
+   <select name="block" id="block" class="custom-select">
+    <option value="1" {% if request.GET.block == "1" %}selected{% endif %}>1-ші блок</option>
+    <option value="2" {% if request.GET.block == "2" %}selected{% endif %}>2-ші блок</option>
+  </select>
+  <tbody>
+    <tr class="table-head">
+      <th>Құжатың атауы</th>
+      <th>Жылы</th>
+      <th>Жүктеу</th>
+    </tr>
+    {% for file in files %}
+    <tr>
+      <td>{{ file.name }}</td>
+      <td>{{ file.year }}</td>
+      <td>
+        <a href="{{ file.file.url }}" download> <button>Скачать</button></a>
+      </td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td colspan="3">
+        {% if page_obj.has_previous %}
+        <a
+          href="?page={{page_obj.previous_page_number}}"
+          style="text-decoration: none"
+          ><</a
+        >
+        {% endif %}
+
+        <span
+          >{{page_obj.number}} бет {{page_obj.paginator.num_pages}} беттен</span
+        >
+        {% if page_obj.has_next %}
+        <a
+          href="?page={{page_obj.next_page_number}}"
+          style="text-decoration: none"
+          >></a
+        >
+        {% endif %}
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %} 
+
+{% block script %}
+<script>
+  document.getElementById("block").addEventListener("change", function () {
+    var selectedValue = this.value;
+    window.location.href = "?block=" + selectedValue;
+  });
+</script>
+{% endblock %}

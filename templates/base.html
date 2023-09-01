@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тенге</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}" />
+</head>
+
+<body>
+  <nav>
+    <div class="logo">№11 "TЕҢГЕ"</div>
+    <ul>
+      <a href="/">
+        <li>Басты бет</li>
+      </a>
+      <a href="{% url 'about' %}">
+        <li>Біз тұралы</li>
+      </a>
+      <a href="{% url 'teachers' %}">
+        <li>Қызметкерлер</li>
+      </a>
+      <div class="dropdown">
+        <button class="dropdown-button">Құжаттар</button>
+        <div class="dropdown-content">
+          <a href="{% url 'year_plan' %}">Жылдық жоспар</a>
+          <a href="{% url 'gpp' %}">Групповой перспективный план</a>
+          <a href="{% url 'group_cyclogram' %}">Циклограмма группы</a>
+          <a href="{% url 'monitoring' %}">Мониторинг</a>
+          <a href="{% url 'personal_development_map' %}">Жеке даму карты</a>
+          <a href="{% url 'methodist_monitoring' %}">Мониторинг методистов</a>
+          <a href="{% url 'm_a_d' %}">М.А.Д.</a>
+          <a href="{% url 'methodist_cyclogram' %}">Циклограмма методиста</a>
+          <a href="{% url 'course' %}">Курс</a>
+          <a href="{% url 'all_files' %}">Все файлы</a>
+        </div>
+      </div>
+      <!-- <a href="{% url 'schedule' %}">
+                <li>Расписание занятий</li>
+            </a> -->
+    </ul>
+    <a href="#contacts" class="contact">Байланыс</a>
+  </nav>
+  <div class="cold"></div>
+  <div class="warm"></div>
+  <form class="search" method="POST" action="{% url 'search' %}">
+    {% csrf_token %}
+    <input placeholder="Название файла" type="search" name="searched">
+    <button>Найти</button>
+  </form>
+  <main class="container">{% block content %} {% endblock %}</main>
+
+  {% block script %} {% endblock %}
+</body>
+<script src="../static/slider.js"></script>
+
+</html>

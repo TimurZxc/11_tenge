@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+<main>
+    <select name="block" id="block" class="custom-select">
+        <option value="1" {% if request.GET.block == "1" %}selected{% endif %}>1-ші блок</option>
+        <option value="2" {% if request.GET.block == "2" %}selected{% endif %}>2-ші блок</option>
+      </select>
+    <h1>Наши Учителя</h1>
+    {% for file in files %}
+    <h1>{{file.name}}</h1>
+    <a href="{{file.file.url}}" download>Скачать файл</a>
+    {% endfor %}
+</main>
+{% endblock %}
+
+
+{% block script %}
+<script>
+  document.getElementById("block").addEventListener("change", function () {
+    var selectedValue = this.value;
+    window.location.href = "?block=" + selectedValue;
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content%}
+    <center>
+        <h2>Результаты по запросу: {{ searched }}</h2>
+        <br>
+        <table>
+           <tbody>
+             <tr class="table-head">
+               <th>Блок</th>
+               <th>Құжатың атауы</th>
+               <th>Жылы</th>
+               <th>Жүктеу</th>
+             </tr>
+             {% for file in searched_files %}
+             <tr>
+               <td>{{ file.block }}</td>
+               <td>{{ file.name }}</td>
+               <td>{{ file.year }}</td>
+               <td>
+                 <a href="{{ file.file.url }}" download> <button>Скачать</button></a>
+               </td>
+             </tr>
+             {% endfor %}
+             <tr>
+               <td colspan="4">
+                   {% if page_obj.has_previous %}
+                     <a href="?page={{page_obj.previous_page_number}}" style="text-decoration: none;"><</a>
+                   {% endif %}
+                   <span>{{page_obj.number}} бет {{page_obj.paginator.num_pages}} беттен</span>
+                   {% if page_obj.has_next %}
+                     <a href="?page={{page_obj.next_page_number}}" style="text-decoration: none;">></a>
+                   {% endif %}
+               </td>
+           </tr>
+           </tbody>
+         </table>
+    </center>
+{% endblock %}

@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% block content %}
+<section class="main-section">
+    <div class="content">
+        <h1>№11 "Теңге" балабақшасы: бақыт пен оқудың кемпірқосағы</h1>
+        <span>
+            №11 "Теңге" жайлы балабақшамызға қош келдіңіз! Біз сіздің кішкентайыңызға
+            қамқорлық, көңіл бөлу және балалық шақтың әр күнінен ләззат алу мүмкіндігі
+            берілген жерміз. Біздің балабақша қаланың қақ ортасында орналасқан және сіздің
+            балаңыздың дамуы үшін тамаша ортаны ұсынады.
+        </span>
+        <a href="#contacts" class="contact">
+            Байланысқа шығу
+        </a>
+    </div>
+    <div class="holder">
+        <div class="image">
+            <img src="../static/images/FB_IMG_1693214004181.jpg" alt="" loading="lazy">
+        </div>
+        <img src="../static/images/icon.svg" class="icon" alt="icon">
+        <img src="../static/images/icon1.svg" class="icon1" alt="icon1">
+        <img src="../static/images/icon2.svg" class="icon2" alt="icon2">
+        <img src="../static/images/icon3.svg" class="icon3" alt="icon3">
+    </div>
+</section>
+<section>
+    <div class="header">
+        <h1>Неліктен біз ең жақсы таңдау болып табыламыз?</h1>
+    </div>
+</section>
+<section class="slider-container">
+    <div class="slider">
+        <img src="../static/images/FB_IMG_1693211327734.jpg" alt="Image 1">
+        <img src="../static/images/FB_IMG_1693211967968.jpg" alt="Image 1">
+        <img src="../static/images/FB_IMG_1693214157043.jpg" alt="Image 1">
+        <img src="../static/images/FB_IMG_1693214686018.jpg" alt="Image 2">
+        <img src="../static/images/FB_IMG_1693214705729.jpg" alt="Image 3">
+        <!-- Добавьте другие изображения здесь -->
+    </div>
+    <button id="prevBtn" onclick="prevSlide()"><</button>
+    <button id="nextBtn" onclick="nextSlide()">></button>
+</section>
+
+<section id="contacts" class="contacts">
+    <div>
+        <h1>Номер телефона</h1>
+        <h3>87777777777</h3>
+    </div>
+    <div>
+        <h1>Электронная почта</h1>
+        <h3>example@example.com</h3>
+    </div>
+    <div>
+        <h1>Адрес</h1>
+        <h3>Example 14/2</h3>
+    </div>
+</section>
+
+{% endblock %}

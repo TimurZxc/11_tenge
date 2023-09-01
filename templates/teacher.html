@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<select name="block" id="block" class="custom-select">
+  <option value="1" {% if request.GET.block == "1" %}selected{% endif %}>1-ші блок</option>
+  <option value="2" {% if request.GET.block == "2" %}selected{% endif %}>2-ші блок</option>
+</select>
+{% for teacher in teachers %}
+<div class="card">
+  <div class="image">
+    {% if teacher.image %}
+    <img style="height: 300px; width: 300px; border-radius: 50%;" src="{{ teacher.image.url }}" alt="">
+    {% else %}
+    <img style="height: 300px; width: 300px;" src="../media/avatars/user-244.svg" alt="">
+    {% endif %}
+  </div>
+  <div class="info">
+    <span>
+      <h3>Т.А.Ә:</h3>
+      <h4>{{ teacher.last_name }} {{ teacher.first_name }} {% if teacher.middle_name %} {{ teacher.middle_name }} {% endif %}</h4>
+    </span>
+    <span>
+      <h3>Туған куні:</h3>
+      <h4>{{ teacher.birth_date }}</h4>
+    </span>
+    <span>
+      <h3>Білімі: </h3>
+      <h4>{{ teacher.education }}</h4>
+    </span>
+    <span>
+      <h3>Дипломы бойынша жоғары біліктілігі:</h3>
+      <h4>{{ teacher.qualification }}</h4>
+    </span>
+    <span>
+      <h3>Лауазымы:</h3>
+      <h4>{{ teacher.position }}</h4>
+    </span>
+    <span>
+      <h3>Педагогикалық еңбек өтілі:</h3>
+      <h4>{{ teacher.experience }}</h4>
+    </span>
+    <span>
+      <h3>Осы мекемедегі еңбек өтілі:</h3>
+      <h4>{{ teacher.overall_experience }}</h4>
+    </span>
+    <span>
+      <h3>Біліктілік санаты:</h3>
+      <h4>{{ teacher.category }}</h4>
+    </span>
+    <span>
+      <h3>Телефон:</h3>
+      <h4>{{ teacher.phone_number }}</h4>
+    </span>
+    <span>
+      <h3>Диплом:</h3>
+      {% if teacher.diploma %}
+      <a href="{{ teacher.diploma.url }}" download> <button>Скачать</button></a>
+      {% else %}
+      <a href="#" download> <button disabled>Отсутствует</button></a>
+      {% endif %}
+    </span>
+  </div>
+</div>
+{% endfor %}
+<div class="pages">
+  {% if page_obj.has_previous %}
+  <a href="?page={{page_obj.previous_page_number}}" style="text-decoration: none;"><</a>
+      {% endif %}
+      <span>{{page_obj.number}} бет {{page_obj.paginator.num_pages}} беттен</span>
+      {% if page_obj.has_next %}
+      <a href="?page={{page_obj.next_page_number}}" style="text-decoration: none;">></a>
+      {% endif %}
+</div>
+{% endblock %}
+
+
+{% block script %}
+<script>
+  document.getElementById("block").addEventListener("change", function () {
+    var selectedValue = this.value;
+    window.location.href = "?block=" + selectedValue;
+  });
+</script>
+{% endblock %}

@@ -1,0 +1,2443 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-08-28T09:13:40.614Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "HUI",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-08-29T16:11:51.493Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "test",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-08-29T16:13:18.009Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "HUI",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-08-30T09:27:50.880Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-08-30T09:28:07.360Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-08-30T11:33:50.436Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Teacher object (1)",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-08-30T11:56:30.232Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\", \"Year\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-08-30T12:11:11.596Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-08-30T12:17:57.915Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-08-30T12:20:28.191Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-08-30T12:23:53.189Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-08-30T12:26:41.392Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-08-30T12:29:13.241Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-08-30T12:29:29.567Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-08-30T12:32:02.869Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-08-30T12:33:45.350Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-08-30T12:55:00.991Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "pidor",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Tag\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-08-31T09:40:38.913Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "Умирбаева Амангүл Сергеевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-08-31T09:52:00.849Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "Кортабаева Нуржамал Жоламановна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-08-31T09:56:40.473Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Шамурадова Мадина Алпамысовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-08-31T10:34:12.296Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Байджанова Гулнар Тулеповна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Block\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-08-31T10:47:03.459Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Матразова Гулназ Кайпназаровна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-08-31T10:50:07.075Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Айладровна Алима Ержанова",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-08-31T10:50:54.326Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Ержанова Алима Айладровна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Last name\", \"Middle name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-08-31T10:53:49.990Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "7",
+    "object_repr": "Сарыева Жамал Абуловна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-08-31T10:54:08.695Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "Ержанова Алима Айладровна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Diploma\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-08-31T10:54:15.734Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "Матразова Гулназ Кайпназаровна",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-08-31T11:33:06.724Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "8",
+    "object_repr": "Коркенбаева Клара Бердимурадовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-08-31T11:39:02.870Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "9",
+    "object_repr": "Разова Камшат Төребековна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-08-31T11:47:21.335Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Бисен Бердіғали None",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-08-31T11:47:49.520Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Бисен Бердіғали None",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-08-31T11:48:02.543Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Бисен Бердіғали ''",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Middle name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-08-31T11:48:09.623Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Бисен Бердіғали None",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Middle name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-08-31T11:49:30.296Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Бисен Бердіғали ‎",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Middle name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-08-31T11:52:40.824Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "11",
+    "object_repr": "Бесжанова Кунимай Табынбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-08-31T11:57:52.894Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Қалдар Гүлнұр None",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-08-31T11:59:05.111Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "12",
+    "object_repr": "Қалдар Гүлнұр None",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-08-31T12:22:20.318Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "13",
+    "object_repr": "Нургожаева Сауле Сарсеновна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-08-31T12:31:27.375Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "14",
+    "object_repr": "Аймаганбетова Камшат Коптилеуовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-08-31T12:36:24.692Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "Шамурадова Мадина Алпамысовна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Diploma\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-08-31T12:36:57.049Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "10",
+    "object_repr": "Бисен Бердіғали ‎",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2023-08-31T12:48:39.340Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "15",
+    "object_repr": "Хыдырбаева Алия Имангазиевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-08-31T12:50:41.026Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "16",
+    "object_repr": "Қожанова Нұрсұлу Жолдасбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-08-31T12:54:37.348Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "17",
+    "object_repr": "Калмурзаева Салтанат Калайкызы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-08-31T12:57:27.265Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "18",
+    "object_repr": "Тулепбергенова Камшат Саматовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2023-08-31T12:59:46.354Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "19",
+    "object_repr": "Сәтбергенова Ақтолқын None",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2023-08-31T13:02:10.978Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "20",
+    "object_repr": "Жанабаева Жанар Бесимбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-08-31T13:05:05.607Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "21",
+    "object_repr": "Назарова Таңсұлу Турсынбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2023-08-31T13:06:56.055Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "22",
+    "object_repr": "Жайлыбаева Загипа Рейимовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2023-08-31T13:09:14.856Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "23",
+    "object_repr": "Кулжанова Зульфия Сагаддиновна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2023-08-31T13:12:21.062Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "24",
+    "object_repr": "Убайдуллаева Гулнора Архимедовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2023-08-31T13:14:51.475Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "25",
+    "object_repr": "Махмудова Амангул Аралхановна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2023-08-31T13:16:36.884Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Нежимова Нагима Толемисовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2023-08-31T13:17:36.228Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "26",
+    "object_repr": "Нежимова Нагима Толемисовна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Diploma\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2023-08-31T13:19:11.894Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "27",
+    "object_repr": "Қалбаева Шолпан Толыбекқызы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2023-08-31T13:21:20.350Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "28",
+    "object_repr": "Тулепбергенова Динагул Бершбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 57,
+  "fields": {
+    "action_time": "2023-08-31T13:23:37.049Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "29",
+    "object_repr": "Айязбаева Құралай Сатыпалдиевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 58,
+  "fields": {
+    "action_time": "2023-08-31T13:25:59.951Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "30",
+    "object_repr": "Эрекова Алия Аширбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 59,
+  "fields": {
+    "action_time": "2023-08-31T13:28:36.568Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "31",
+    "object_repr": "Менкеева Анар Кудагелдыевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 60,
+  "fields": {
+    "action_time": "2023-08-31T13:31:44.590Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "32",
+    "object_repr": "Нурсейтова Назкен Хайруллаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 61,
+  "fields": {
+    "action_time": "2023-08-31T13:34:00.762Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "33",
+    "object_repr": "Киреева Дурсун Мурзабаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 62,
+  "fields": {
+    "action_time": "2023-08-31T13:37:15.733Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "34",
+    "object_repr": "Баколбаева Эныпа Болекбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 63,
+  "fields": {
+    "action_time": "2023-08-31T13:40:02.256Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "35",
+    "object_repr": "Иманбаева Кундуз Изкеновна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 64,
+  "fields": {
+    "action_time": "2023-08-31T13:42:08.254Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "36",
+    "object_repr": "Алданова Улболсун Сансызбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 65,
+  "fields": {
+    "action_time": "2023-08-31T13:44:41.172Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "37",
+    "object_repr": "Кокышова Тилектес Сабырбаевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 66,
+  "fields": {
+    "action_time": "2023-08-31T13:47:09.026Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "38",
+    "object_repr": "Базарбаева Ширингүл Данатаровна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 67,
+  "fields": {
+    "action_time": "2023-08-31T13:49:46.436Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "39",
+    "object_repr": "Бақыт Құндыз Бақытқызы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 68,
+  "fields": {
+    "action_time": "2023-08-31T13:51:42.503Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "40",
+    "object_repr": "Разова Жанымай Торебековна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 69,
+  "fields": {
+    "action_time": "2023-08-31T13:52:26.494Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "40",
+    "object_repr": "Разова Жанымай Торебековна",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Diploma\", \"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 70,
+  "fields": {
+    "action_time": "2023-08-31T14:01:14.192Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "41",
+    "object_repr": "Сарбаева Багила Самигуллакызы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 71,
+  "fields": {
+    "action_time": "2023-08-31T14:03:19.354Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "42",
+    "object_repr": "Успанова Карлыгаш Джусуповна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 72,
+  "fields": {
+    "action_time": "2023-08-31T14:05:16.312Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "43",
+    "object_repr": "Абдигалиева Кенжегул Даужановна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 73,
+  "fields": {
+    "action_time": "2023-08-31T14:07:06.587Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "44",
+    "object_repr": "Байтишова Арыу Ахметовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 74,
+  "fields": {
+    "action_time": "2023-08-31T14:08:46.891Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "45",
+    "object_repr": "Бердиханова Амангул Закиевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 75,
+  "fields": {
+    "action_time": "2023-08-31T14:10:28.975Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "46",
+    "object_repr": "Шарбаева Дилбар Шакировна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 76,
+  "fields": {
+    "action_time": "2023-08-31T14:12:12.009Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "47",
+    "object_repr": "Ілясова Еңлікгүл Маратқызы",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 77,
+  "fields": {
+    "action_time": "2023-08-31T14:13:40.409Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "48",
+    "object_repr": "Чувакбаева Айжан Юривна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 78,
+  "fields": {
+    "action_time": "2023-08-31T14:15:47.999Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "49",
+    "object_repr": "Жумабаева Жаныл Бекмурадовна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 79,
+  "fields": {
+    "action_time": "2023-08-31T14:17:45.434Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "50",
+    "object_repr": "Қыдырходжаева Акбала Оразалыевна",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add files",
+    "content_type": 7,
+    "codename": "add_files"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change files",
+    "content_type": 7,
+    "codename": "change_files"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete files",
+    "content_type": 7,
+    "codename": "delete_files"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view files",
+    "content_type": 7,
+    "codename": "view_files"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add teacher",
+    "content_type": 8,
+    "codename": "add_teacher"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change teacher",
+    "content_type": 8,
+    "codename": "change_teacher"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete teacher",
+    "content_type": 8,
+    "codename": "delete_teacher"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view teacher",
+    "content_type": 8,
+    "codename": "view_teacher"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add file",
+    "content_type": 7,
+    "codename": "add_file"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change file",
+    "content_type": 7,
+    "codename": "change_file"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete file",
+    "content_type": 7,
+    "codename": "delete_file"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view file",
+    "content_type": 7,
+    "codename": "view_file"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$CDkfHEAZwgblGQplX8AeA8$UffQ26ZnTl+cRdLoGJWYRR5SCL3zhS4JbVinkKF8Qlg=",
+    "last_login": "2023-08-28T09:13:20.558Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@admin.kz",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-08-28T09:12:50.405Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "app",
+    "model": "file"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "app",
+    "model": "teacher"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "tfkctenrz8814xy787ds2pd5xbx1y2gm",
+  "fields": {
+    "session_data": ".eJxVjEEOwiAQRe_C2pAyLQVcuvcMhGFmpGpoUtqV8e7apAvd_vfef6mYtrXErfESJ1JnZdTpd8OUH1x3QPdUb7POc12XCfWu6IM2fZ2Jn5fD_TsoqZVvjQb64CxndJ4Ju5F7GEYnbvDZjyySRDowA2UD1gYLXRCkIIbYICRW7w_qujhr:1qaYJE:PqtZ-TvLJKlxnB5sO5DD96UFEDW9on5QBOx-5Q2TzWw",
+    "expire_date": "2023-09-11T09:13:20.565Z"
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 1,
+  "fields": {
+    "first_name": "Гулнар",
+    "last_name": "Байджанова",
+    "middle_name": "Тулеповна",
+    "birth_date": "1971-05-29",
+    "education": "Батыс Қазақстан инновациялық-технологиялық университеті",
+    "diploma": "diplomas/Байджанова_Г.pdf",
+    "qualification": "Мектепке дейінгі оқыту және тәрбие",
+    "position": "«№11 «Теңге» бөбекжай» меңгеруші",
+    "experience": "18 жыл 11 ай",
+    "overall_experience": "18 жыл 11 ай",
+    "category": "І санат",
+    "phone_number": "87026559493",
+    "image": "avatars/Гулнар.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 2,
+  "fields": {
+    "first_name": "Амангүл",
+    "last_name": "Умирбаева",
+    "middle_name": "Сергеевна",
+    "birth_date": "1971-07-12",
+    "education": "Батыс Қазақстан инновациялық-технологиялық университеті",
+    "diploma": "diplomas/Умирбаева_А.pdf",
+    "qualification": "«Мектепке дейінгі оқыту және тәрбие»",
+    "position": "\"№11 \"Теңге\" бөбекжайы\" Меңгеруші орынбасары.",
+    "experience": "25 ж 11 ай",
+    "overall_experience": "25 ж 11 ай",
+    "category": "Педагог-модератор",
+    "phone_number": "87016159168",
+    "image": "avatars/умирбаева.jpg",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 3,
+  "fields": {
+    "first_name": "Нуржамал",
+    "last_name": "Кортабаева",
+    "middle_name": "Жоламановна",
+    "birth_date": "1996-02-06",
+    "education": "Қазақ мемлекеттік қыздар педагогикалық университеті",
+    "diploma": "",
+    "qualification": "«Педагогика және психология»",
+    "position": "Педагог",
+    "experience": "9 жыл",
+    "overall_experience": "11 жыл 11 ай",
+    "category": "І санат",
+    "phone_number": "87022552939",
+    "image": "avatars/image_2023-08-31_15-43-08.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 4,
+  "fields": {
+    "first_name": "Мадина",
+    "last_name": "Шамурадова",
+    "middle_name": "Алпамысовна",
+    "birth_date": "1991-01-20",
+    "education": "«Маңғыстау гуманитарлық колледжі МКҚК»",
+    "diploma": "diplomas/Шамурадова_М.pdf",
+    "qualification": "\"Мектепке дейінгі тәрбие және оқыту\"",
+    "position": "Педагог",
+    "experience": "7 ж 5 ай",
+    "overall_experience": "7 ж 5 ай",
+    "category": "Педагог-модератор",
+    "phone_number": "87474570645",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 5,
+  "fields": {
+    "first_name": "Гулназ",
+    "last_name": "Матразова",
+    "middle_name": "Кайпназаровна",
+    "birth_date": "1968-06-16",
+    "education": "Абай атындағы Қазақ  ұлттық педагогикалық университеті",
+    "diploma": "diplomas/Матразова_Г.pdf",
+    "qualification": "«Орыс тілі мен әдебиеті»",
+    "position": "Педагог",
+    "experience": "9 ж 3 ай",
+    "overall_experience": "29 ж 11 ай",
+    "category": "І санат",
+    "phone_number": "87029693306",
+    "image": "avatars/image_2023-08-31_16-45-13.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 6,
+  "fields": {
+    "first_name": "Алима",
+    "last_name": "Ержанова",
+    "middle_name": "Айладровна",
+    "birth_date": "1984-03-04",
+    "education": "Батыс Қазақстан иновациялық-техникалық университеті",
+    "diploma": "diplomas/Ержанова_А.pdf",
+    "qualification": "«Мектепке дейінгі оқыту мен тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "9 ж 1 ай",
+    "overall_experience": "9 ж 1 ай",
+    "category": "Педагог - модератор",
+    "phone_number": "87017902215",
+    "image": "avatars/image_2023-08-31_16-49-50.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 7,
+  "fields": {
+    "first_name": "Жамал",
+    "last_name": "Сарыева",
+    "middle_name": "Абуловна",
+    "birth_date": "1976-04-07",
+    "education": "Жоғары, Абай атындағы Қазақ педагогикалық университеті",
+    "diploma": "diplomas/Сарыева_Ж.pdf",
+    "qualification": "«Педагогика және психология»",
+    "position": "Педагог",
+    "experience": "9 ж 3 ай",
+    "overall_experience": "24 ж 8 ай",
+    "category": "І санат",
+    "phone_number": "87785604876",
+    "image": "avatars/image_2023-08-31_16-53-25.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 8,
+  "fields": {
+    "first_name": "Клара",
+    "last_name": "Коркенбаева",
+    "middle_name": "Бердимурадовна",
+    "birth_date": "1982-02-27",
+    "education": "Арнаулы орта, Жаңаөзен политехникалық колледжі.",
+    "diploma": "diplomas/Коркенбаева_К.pdf",
+    "qualification": "\"Дене шынықтыру пәнінің жетекшісі\"",
+    "position": "Педагог",
+    "experience": "7 жыл",
+    "overall_experience": "7 жыл",
+    "category": "Педагог - модератор",
+    "phone_number": "87787041335",
+    "image": "avatars/image_2023-08-31_17-29-54.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 9,
+  "fields": {
+    "first_name": "Камшат",
+    "last_name": "Разова",
+    "middle_name": "Төребековна",
+    "birth_date": "1980-12-01",
+    "education": "Академик Ә.Қуатбеков атындағы Халықтар достығы униберситеті",
+    "diploma": "diplomas/Разова_К.pdf",
+    "qualification": "«Дене тәрбиесі және спорт»",
+    "position": "Педагог",
+    "experience": "5 ж 3 ай",
+    "overall_experience": "5 ж 3 ай",
+    "category": "Санатсыз",
+    "phone_number": "87781786531",
+    "image": "avatars/image_2023-08-31_17-38-04.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 10,
+  "fields": {
+    "first_name": "Бердіғали",
+    "last_name": "Бисен",
+    "middle_name": "‎",
+    "birth_date": "1976-08-02",
+    "education": "Қазақстан инженерлі-педагогикалық халықтар Достығы университеті",
+    "diploma": "diplomas/Бисен_Б.pdf",
+    "qualification": "Музыкалық білім",
+    "position": "Педагог",
+    "experience": "10 ж 4 ай",
+    "overall_experience": "10 ж 4 ай",
+    "category": "І санат",
+    "phone_number": "87015925018",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 11,
+  "fields": {
+    "first_name": "Кунимай",
+    "last_name": "Бесжанова",
+    "middle_name": "Табынбаевна",
+    "birth_date": "1986-11-11",
+    "education": "технологиялық университеті",
+    "diploma": "diplomas/Бесжанова_К.pdf",
+    "qualification": "«Мектепке дейінгі оқыту мен тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "9 ж",
+    "overall_experience": "12 ж 3 ай",
+    "category": "Педагог-модератор",
+    "phone_number": "87783049333",
+    "image": "avatars/image_2023-08-31_17-51-44.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 12,
+  "fields": {
+    "first_name": "Гүлнұр",
+    "last_name": "Қалдар",
+    "middle_name": null,
+    "birth_date": "1995-05-11",
+    "education": "Шымкент «маман» оқу-өңдірістік орталыгы. Академик Ә.Қуатбеков атындағы Халықтар достығы университеті. (оқып жатыр)",
+    "diploma": "diplomas/Калдар_Гулнур.pdf",
+    "qualification": "Музыкалық меңгеруші, Мектепке дейінгі оқыту және тәрбиелеу.",
+    "position": "Педагог",
+    "experience": "6 ж 9 ай",
+    "overall_experience": "6 ж 9 ай",
+    "category": "Санатсыз",
+    "phone_number": "87082651795",
+    "image": "avatars/image_2023-08-31_17-56-57.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 13,
+  "fields": {
+    "first_name": "Сауле",
+    "last_name": "Нургожаева",
+    "middle_name": "Сарсеновна",
+    "birth_date": "1989-03-24",
+    "education": "Жоғары, Батыс Қазақстан иновациялық-техникалық университеті",
+    "diploma": "diplomas/Нургожаева_С.pdf",
+    "qualification": "«Мектепке дейінгі оқыту мен тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "9 ж 3 ай",
+    "overall_experience": "9 ж 3 ай",
+    "category": "Санатсыз",
+    "phone_number": "87089540047",
+    "image": "avatars/image_2023-08-31_18-21-27.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 14,
+  "fields": {
+    "first_name": "Камшат",
+    "last_name": "Аймаганбетова",
+    "middle_name": "Коптилеуовна",
+    "birth_date": "1979-03-24",
+    "education": "Өзбекстан Республикасы Бердах атындағы Қарақалпақ мемлекеттік университеті",
+    "diploma": "diplomas/Аймаганбетова_К.pdf",
+    "qualification": "«Математика және информатика»",
+    "position": "Педагог",
+    "experience": "9 ж 3 ай",
+    "overall_experience": "22 ж 2 ай",
+    "category": "І санат",
+    "phone_number": "87028341779",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 15,
+  "fields": {
+    "first_name": "Алия",
+    "last_name": "Хыдырбаева",
+    "middle_name": "Имангазиевна",
+    "birth_date": "1980-07-22",
+    "education": "Батыс Қазақстан инновациялық-технологиялық университеті",
+    "diploma": "diplomas/Хыдырбаева_А.pdf",
+    "qualification": "«Мектепке дейінгі оқыту мен тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "9 ж 4 ай",
+    "overall_experience": "9 ж 4 ай",
+    "category": "Санатсыз",
+    "phone_number": "Санатсыз",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 16,
+  "fields": {
+    "first_name": "Нұрсұлу",
+    "last_name": "Қожанова",
+    "middle_name": "Жолдасбаевна",
+    "birth_date": "1991-03-02",
+    "education": "Батыс Қазақстан иновациялық-техникалық университеті",
+    "diploma": "diplomas/Кожанова_Н.pdf",
+    "qualification": "«Мектепке дейінгі оқыту және тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "9 ж 4 ай",
+    "overall_experience": "9 ж 4 ай",
+    "category": "ІІ санат",
+    "phone_number": "87783217091",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 17,
+  "fields": {
+    "first_name": "Салтанат",
+    "last_name": "Калмурзаева",
+    "middle_name": "Калайкызы",
+    "birth_date": "1995-07-12",
+    "education": "Батыс Қазақстан инновациялық-технологиялық университеті",
+    "diploma": "diplomas/Калмурзаева_С.pdf",
+    "qualification": "«Мектепке дейінгі оқыту мен тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "4 ж 11 ай",
+    "overall_experience": "4 ж 11 ай",
+    "category": "ІІ санат",
+    "phone_number": "87086380741",
+    "image": "avatars/image_2023-08-31_18-53-45.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 18,
+  "fields": {
+    "first_name": "Камшат",
+    "last_name": "Тулепбергенова",
+    "middle_name": "Саматовна",
+    "birth_date": "1984-02-05",
+    "education": "Академик Ә.Қуатбеков атындағы Халықтар достығы университеті",
+    "diploma": "diplomas/Тулепбергенова_К.pdf",
+    "qualification": "Мектепке дейінгі оқыту және тәрбиелеу",
+    "position": "Педагог",
+    "experience": "9ж 3  ай",
+    "overall_experience": "10 ж 2 ай",
+    "category": "Педагог - модератор",
+    "phone_number": "87076781699",
+    "image": "avatars/image_2023-08-31_18-56-15.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 19,
+  "fields": {
+    "first_name": "Ақтолқын",
+    "last_name": "Сәтбергенова",
+    "middle_name": null,
+    "birth_date": "1993-05-29",
+    "education": "МКҚК «Маңғыстау гуманитарлық колледж»",
+    "diploma": "diplomas/Сатбергенова_А.pdf",
+    "qualification": "«Мектепке дейінгі оқыту мен тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "6 ж 3 ай",
+    "overall_experience": "10 ж 3 ай",
+    "category": "Санатсыз",
+    "phone_number": "87083627276",
+    "image": "avatars/image_2023-08-31_18-58-52.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 20,
+  "fields": {
+    "first_name": "Жанар",
+    "last_name": "Жанабаева",
+    "middle_name": "Бесимбаевна",
+    "birth_date": "1992-04-01",
+    "education": "Каспий педагогика және салалық технологиялар колледжі",
+    "diploma": "diplomas/Жанабаева_Ж.pdf",
+    "qualification": "«Мектепке дейінгі тәрбие»",
+    "position": "Педагог",
+    "experience": "1 ж 4 ай",
+    "overall_experience": "1 ж 4 ай",
+    "category": "Санатсыз",
+    "phone_number": "87783736339",
+    "image": "avatars/image_2023-08-31_19-01-31.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 21,
+  "fields": {
+    "first_name": "Таңсұлу",
+    "last_name": "Назарова",
+    "middle_name": "Турсынбаевна",
+    "birth_date": "1982-01-03",
+    "education": "Батыс Қазақстан иновациялық",
+    "diploma": "diplomas/Назарова_Т.pdf",
+    "qualification": "Мектепке дейінгі оқыту мен тәрбиелеу.",
+    "position": "Педагог",
+    "experience": "5 ж 6 ай",
+    "overall_experience": "5 ж 6 ай",
+    "category": "Санатсыз",
+    "phone_number": "87079780310",
+    "image": "avatars/image_2023-08-31_19-04-28.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 22,
+  "fields": {
+    "first_name": "Загипа",
+    "last_name": "Жайлыбаева",
+    "middle_name": "Рейимовна",
+    "birth_date": "1972-08-01",
+    "education": "Аймақтық әлеуметтік-инновациялық -университеті",
+    "diploma": "diplomas/Жайлыбаева_З.pdf",
+    "qualification": "«Мектепке дейінгі оқыту мен тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "8 ж 8 ай",
+    "overall_experience": "8 ж 8 ай",
+    "category": "ІІ санат",
+    "phone_number": "87785600772",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 23,
+  "fields": {
+    "first_name": "Зульфия",
+    "last_name": "Кулжанова",
+    "middle_name": "Сагаддиновна",
+    "birth_date": "1978-03-23",
+    "education": "Ташкент педагогикалық колледж",
+    "diploma": "diplomas/Кулжанова_З.pdf",
+    "qualification": "«Мектепке дейінгі тәрбие»",
+    "position": "Педагог",
+    "experience": "9 ж 4 ай",
+    "overall_experience": "9 ж 4 ай",
+    "category": "Педагог - модератор",
+    "phone_number": "87026159742",
+    "image": "avatars/image_2023-08-31_19-08-38.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 24,
+  "fields": {
+    "first_name": "Гулнора",
+    "last_name": "Убайдуллаева",
+    "middle_name": "Архимедовна",
+    "birth_date": "1990-08-23",
+    "education": "Ақтөбе мемлекеттік педагогикалық институты. Академик Ә.Қуатбеков атындағы Халықтар достығы униберситеті 2 -курс",
+    "diploma": "diplomas/Убайдуллаева_Г.pdf",
+    "qualification": "«Бастауышта оқыту методикасы», \"Мектепке дейінгі оқыту және тәрбие\"",
+    "position": "Педагог",
+    "experience": "9 ж 3 ай",
+    "overall_experience": "10 ж 5 ай",
+    "category": "Санатсыз",
+    "phone_number": "87715865997",
+    "image": "avatars/image_2023-08-31_19-11-40.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 25,
+  "fields": {
+    "first_name": "Амангул",
+    "last_name": "Махмудова",
+    "middle_name": "Аралхановна",
+    "birth_date": "1980-10-11",
+    "education": "Каспий педагогика және салалық технологиялар колледжі",
+    "diploma": "diplomas/Махмудова_А.pdf",
+    "qualification": "\"Мектепке дейінгі тәрбие және оқыту\"",
+    "position": "Педагог",
+    "experience": "7 ж 6 ай",
+    "overall_experience": "7 ж 6 ай",
+    "category": "ІІ санат",
+    "phone_number": "87085622380",
+    "image": "avatars/image_2023-08-31_19-14-07.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 26,
+  "fields": {
+    "first_name": "Нагима",
+    "last_name": "Нежимова",
+    "middle_name": "Толемисовна",
+    "birth_date": "1983-03-11",
+    "education": "Батыс Қазақстан иновациялық-техникалық университеті",
+    "diploma": "diplomas/Нежимова_Н.pdf",
+    "qualification": "«Мектепке дейінгі оқыту мен тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "6 ж 3 ай",
+    "overall_experience": "6 ж 3 ай",
+    "category": "Санатсыз",
+    "phone_number": "87025973383",
+    "image": "avatars/image_2023-08-31_19-16-58.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 27,
+  "fields": {
+    "first_name": "Шолпан",
+    "last_name": "Қалбаева",
+    "middle_name": "Толыбекқызы",
+    "birth_date": "1984-08-12",
+    "education": "«Каспий» педагогика және салалық технологиялар колледжі",
+    "diploma": "diplomas/Калбаева_Ш.pdf",
+    "qualification": "\"Мектепке дейінгі тәрбие және оқыту\"",
+    "position": "Педагог",
+    "experience": "7 ж 5 ай",
+    "overall_experience": "7 ж 5 ай",
+    "category": "ІІ санат",
+    "phone_number": "87089192784",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 28,
+  "fields": {
+    "first_name": "Динагул",
+    "last_name": "Тулепбергенова",
+    "middle_name": "Бершбаевна",
+    "birth_date": "1977-04-05",
+    "education": "Каспий педагогика және салалық технологиялар колледжі",
+    "diploma": "diplomas/Тулепбергенова_Д.pdf",
+    "qualification": "\"Мектепке дейінгі тәрбие және оқыту»",
+    "position": "Педагог",
+    "experience": "7 ж 5 ай",
+    "overall_experience": "7 ж 5 ай",
+    "category": "ІІ санат",
+    "phone_number": "87011677505",
+    "image": "avatars/image_2023-08-31_19-20-42.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 29,
+  "fields": {
+    "first_name": "Құралай",
+    "last_name": "Айязбаева",
+    "middle_name": "Сатыпалдиевна",
+    "birth_date": "1984-08-12",
+    "education": "«Тараз инновациялық-гуманитарлық унтверситеті»",
+    "diploma": "diplomas/Аиязбаева_К.pdf",
+    "qualification": "«Мектепке дейінгі оқыту және тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "6 ж",
+    "overall_experience": "6 ж",
+    "category": "Санатсыз",
+    "phone_number": "87478539480",
+    "image": "avatars/image_2023-08-31_19-22-52.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 30,
+  "fields": {
+    "first_name": "Алия",
+    "last_name": "Эрекова",
+    "middle_name": "Аширбаевна",
+    "birth_date": "1969-06-05",
+    "education": "Жоғары,Абай атындағы Қазақ педагогикалық университеті  Арнаулы орта, Жетісай қазақ педагогикалық училище",
+    "diploma": "diplomas/Эрекова_А.pdf",
+    "qualification": "«Педагогика және психология» «Мектепке дейінгі білім және тәрбие беру»",
+    "position": "Педагог",
+    "experience": "9 ж 5 ай",
+    "overall_experience": "29 ж 5 ай",
+    "category": "Педагог-сарапшы",
+    "phone_number": "87029608426",
+    "image": "avatars/image_2023-08-31_19-25-22.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 31,
+  "fields": {
+    "first_name": "Анар",
+    "last_name": "Менкеева",
+    "middle_name": "Кудагелдыевна",
+    "birth_date": "1989-01-18",
+    "education": "Каспий педагогика және салалық технологиялар колледжі",
+    "diploma": "diplomas/Менкеева_А.pdf",
+    "qualification": "«Мектепке дейінгі тәрбие және оқыту»",
+    "position": "Педагог",
+    "experience": "4 ж 4 ай",
+    "overall_experience": "4 ж 4 ай",
+    "category": "Санатсыз",
+    "phone_number": "87026617081",
+    "image": "avatars/image_2023-08-31_19-28-00.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 32,
+  "fields": {
+    "first_name": "Назкен",
+    "last_name": "Нурсейтова",
+    "middle_name": "Хайруллаевна",
+    "birth_date": "1981-12-25",
+    "education": "Қазақ инженерлі-педагогикалық  халақаралық Достығы университеті",
+    "diploma": "diplomas/Нурсейитова_Н.pdf",
+    "qualification": "\"Мектепке дейінгі тәрбие және оқыту\"",
+    "position": "Педагог",
+    "experience": "3 ж 3 ай",
+    "overall_experience": "3 ж 3 ай",
+    "category": "Санатсыз",
+    "phone_number": "+77761479307",
+    "image": "avatars/image_2023-08-31_19-30-56.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 33,
+  "fields": {
+    "first_name": "Дурсун",
+    "last_name": "Киреева",
+    "middle_name": "Мурзабаевна",
+    "birth_date": "1981-07-15",
+    "education": "Батыс Қазақстан инновациялық-технологиялық университеті",
+    "diploma": "diplomas/Киреева_Д.pdf",
+    "qualification": "\"Мектепке дейінгі оқыту мен тәрбиелеу\"",
+    "position": "Педагог",
+    "experience": "7ж 5ай",
+    "overall_experience": "7ж 5ай",
+    "category": "Санатсыз",
+    "phone_number": "87015840081",
+    "image": "avatars/image_2023-08-31_19-33-32.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 34,
+  "fields": {
+    "first_name": "Эныпа",
+    "last_name": "Баколбаева",
+    "middle_name": "Болекбаевна",
+    "birth_date": "1978-05-19",
+    "education": "Батыс Қазақстан иновациялық-техникалық университеті",
+    "diploma": "",
+    "qualification": "«Мектепке дейінгі тәрбиелеу және білім беру»",
+    "position": "Педагог",
+    "experience": "4ж 6 ай",
+    "overall_experience": "4ж 6 ай",
+    "category": "ІІ санат",
+    "phone_number": "+77789678353",
+    "image": "avatars/image_2023-08-31_19-35-54.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 35,
+  "fields": {
+    "first_name": "Кундуз",
+    "last_name": "Иманбаева",
+    "middle_name": "Изкеновна",
+    "birth_date": "1991-10-28",
+    "education": "университеті",
+    "diploma": "diplomas/Иманбаева_К.pdf",
+    "qualification": "«Мектепке дейінгі тәрбиелеу және білім беру»",
+    "position": "Педагог",
+    "experience": "9ж 6 ай",
+    "overall_experience": "9ж 6 ай",
+    "category": "Педагог - модератор",
+    "phone_number": "+77028079619",
+    "image": "avatars/image_2023-08-31_19-39-29.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 36,
+  "fields": {
+    "first_name": "Улболсун",
+    "last_name": "Алданова",
+    "middle_name": "Сансызбаевна",
+    "birth_date": "1984-08-17",
+    "education": "«Каспий педагогика және салалық технологиялар колледжі»",
+    "diploma": "diplomas/Алданова_У.pdf",
+    "qualification": "\"Мектепке дейінгі тәрбие\"",
+    "position": "Педагог",
+    "experience": "5ж 3 ай",
+    "overall_experience": "5ж 3 ай",
+    "category": "Санатсыз",
+    "phone_number": "+77074362482",
+    "image": "avatars/image_2023-08-31_19-41-38.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 37,
+  "fields": {
+    "first_name": "Тилектес",
+    "last_name": "Кокышова",
+    "middle_name": "Сабырбаевна",
+    "birth_date": "1975-05-22",
+    "education": "«Республикалқ  ТжКБ беруді дамытудың және біліктілікті берудің ғылыми-әдістемелік орталығы»»   Арнаулы орта «Каспи» педагогика және салалық технологиялар колледжі 06.04.2016 ж",
+    "diploma": "diplomas/Кокышова_Т.pdf",
+    "qualification": "«Мектепке дейінгі тәрбие және оқыту  «Бастауыш білім беру»",
+    "position": "Педагог",
+    "experience": "3 ж 7 ай",
+    "overall_experience": "3 ж 7 ай",
+    "category": "Санатсыз",
+    "phone_number": "+77025416099",
+    "image": "avatars/image_2023-08-31_19-43-57.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 38,
+  "fields": {
+    "first_name": "Ширингүл",
+    "last_name": "Базарбаева",
+    "middle_name": "Данатаровна",
+    "birth_date": "1996-01-02",
+    "education": "МКҚК «Маңғыстау гуманитарлық колледж»",
+    "diploma": "diplomas/Базарбаев_Ш.pdf",
+    "qualification": "«Мектепке дейінгі тәрбие»",
+    "position": "Педагог",
+    "experience": "6 ж 7 ай",
+    "overall_experience": "6 ж 7 ай",
+    "category": "Санатсыз",
+    "phone_number": "+77025988033",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 39,
+  "fields": {
+    "first_name": "Құндыз",
+    "last_name": "Бақыт",
+    "middle_name": "Бақытқызы",
+    "birth_date": "1991-09-17",
+    "education": "«Каспий педагогика және салалық технологиялар колледжі»",
+    "diploma": "diplomas/Бакыт_К.pdf",
+    "qualification": "«Мектепке дейінгі оқыту және тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "7ж 8 ай",
+    "overall_experience": "7ж 8 ай",
+    "category": "Санатсыз",
+    "phone_number": "+77018127779",
+    "image": "avatars/image_2023-08-31_19-48-47.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 40,
+  "fields": {
+    "first_name": "Жанымай",
+    "last_name": "Разова",
+    "middle_name": "Торебековна",
+    "birth_date": "1986-01-02",
+    "education": "«Абай атындағы Қазақ ұлттық педагогикалық университеті»",
+    "diploma": "diplomas/Разова_Ж.pdf",
+    "qualification": "«Мектепке дейінгі оқыту және тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "10 ж 7ай",
+    "overall_experience": "10 ж 7ай",
+    "category": "І санат",
+    "phone_number": "+77473645677",
+    "image": "avatars/image_2023-08-31_19-51-51.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 41,
+  "fields": {
+    "first_name": "Багила",
+    "last_name": "Сарбаева",
+    "middle_name": "Самигуллакызы",
+    "birth_date": "1992-12-25",
+    "education": "С.Бәйішев атындағы Ақтөбе университеті «Республикалық  ТжКБ беруді дамытудың және біліктілікті берудің ғылыми-әдістемелік орталығы» \"AGZNAN\"",
+    "diploma": "diplomas/Сарбаева_Б.pdf",
+    "qualification": "\"Бастауыш оқыту педагогикасы мен әдістемесі\"   \"Мектепке дейінгі тәрбие және білім беру\"",
+    "position": "Педагог",
+    "experience": "9ж 3 ай",
+    "overall_experience": "9ж 3 ай",
+    "category": "ІІ санат",
+    "phone_number": "87029491762",
+    "image": "avatars/image_2023-08-31_20-00-33.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 42,
+  "fields": {
+    "first_name": "Карлыгаш",
+    "last_name": "Успанова",
+    "middle_name": "Джусуповна",
+    "birth_date": "1972-02-10",
+    "education": "Абай атындағы Қазақ педагогикалық университеті",
+    "diploma": "diplomas/Успанова_К.pdf",
+    "qualification": "\"Мектепке дейінгі оқыту мен тәрбиелеу\"",
+    "position": "Педагог",
+    "experience": "9ж 3 ай",
+    "overall_experience": "9ж 3 ай",
+    "category": "Педагог - сарапшы",
+    "phone_number": "+77011893481",
+    "image": "avatars/image_2023-08-31_20-02-38.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 43,
+  "fields": {
+    "first_name": "Кенжегул",
+    "last_name": "Абдигалиева",
+    "middle_name": "Даужановна",
+    "birth_date": "1985-01-04",
+    "education": "Көпсалалы «Болашақ» колледжі",
+    "diploma": "diplomas/Абдигалиева_К.pdf",
+    "qualification": "«Мектепке дейінгі тәрбие және оқыту»",
+    "position": "Педагог",
+    "experience": "9 ай",
+    "overall_experience": "9 ай",
+    "category": "Санатсыз",
+    "phone_number": "+77077204990",
+    "image": "avatars/image_2023-08-31_20-04-40.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 44,
+  "fields": {
+    "first_name": "Арыу",
+    "last_name": "Байтишова",
+    "middle_name": "Ахметовна",
+    "birth_date": "1990-05-31",
+    "education": "Академик Ә.Қуатбеков атындағы Халықтар достығы униберситеті 2021 жыл  «Каспий педагогика және салалық техникалар колледжі»",
+    "diploma": "diplomas/Байтишова_А.pdf",
+    "qualification": "«Мектепке дейінгі тәрбие мен оқыту»",
+    "position": "Педагог",
+    "experience": "9 ж 3 ай",
+    "overall_experience": "9 ж 3 ай",
+    "category": "ІІ санат",
+    "phone_number": "+77085399708",
+    "image": "avatars/image_2023-08-31_20-06-32.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 45,
+  "fields": {
+    "first_name": "Амангул",
+    "last_name": "Бердиханова",
+    "middle_name": "Закиевна",
+    "birth_date": "1978-06-11",
+    "education": "Ақтөбе гуманитарлық техникалық колледжі",
+    "diploma": "diplomas/Бердиханова_А.pdf",
+    "qualification": "«Мектепке дейінгі тәрбиелеу және білім беру»",
+    "position": "Педагог",
+    "experience": "6 ж 11 ай",
+    "overall_experience": "6 ж 11 ай",
+    "category": "ІІ санат",
+    "phone_number": "+77027632078",
+    "image": "avatars/image_2023-08-31_20-08-11.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 46,
+  "fields": {
+    "first_name": "Дилбар",
+    "last_name": "Шарбаева",
+    "middle_name": "Шакировна",
+    "birth_date": "1988-02-25",
+    "education": "Академик Ә.Қуатбеков атындағы Халықтар достығы университеті",
+    "diploma": "diplomas/Шарбаева_Д.pdf",
+    "qualification": "«Мектепке дейінгі оқыту және тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "8 ж 7 ай",
+    "overall_experience": "8 ж 7 ай",
+    "category": "ІІ санат",
+    "phone_number": "+77081618301",
+    "image": "avatars/image_2023-08-31_20-10-02.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 47,
+  "fields": {
+    "first_name": "Еңлікгүл",
+    "last_name": "Ілясова",
+    "middle_name": "Маратқызы",
+    "birth_date": "1997-11-06",
+    "education": "Академик Ә.Қуатбеков атындағы Халықтар достығы униберситеті",
+    "diploma": "diplomas/Илясова.pdf",
+    "qualification": "«Педагогика және психология»",
+    "position": "Педагог",
+    "experience": "4ж",
+    "overall_experience": "4ж",
+    "category": "Санатсыз",
+    "phone_number": "+77474819749",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 48,
+  "fields": {
+    "first_name": "Айжан",
+    "last_name": "Чувакбаева",
+    "middle_name": "Юривна",
+    "birth_date": "1987-08-05",
+    "education": "М.Әуезов атындағы Оңтүстік Қазақстан мемлекеттік университеті",
+    "diploma": "diplomas/Чувакбаева_А.pdf",
+    "qualification": "«Бейнелеу өнері және сызу»",
+    "position": "Педагог",
+    "experience": "9 ж 3 ай",
+    "overall_experience": "12ж 7ай",
+    "category": "Педагог-сарапшы",
+    "phone_number": "+77013338304",
+    "image": "",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 49,
+  "fields": {
+    "first_name": "Жаныл",
+    "last_name": "Жумабаева",
+    "middle_name": "Бекмурадовна",
+    "birth_date": "1989-03-24",
+    "education": "Батыс Қазақстан инновациялық  техникалық университеті",
+    "diploma": "diplomas/Жумабаева_Ж.pdf",
+    "qualification": "Бастауышта оқыту педагогикасы мен әдістемесі",
+    "position": "Педагог",
+    "experience": "8 ж 6 ай",
+    "overall_experience": "8 ж 6 ай",
+    "category": "Санатсыз",
+    "phone_number": "+77754895724",
+    "image": "avatars/image_2023-08-31_20-15-15.png",
+    "block": 1
+  }
+},
+{
+  "model": "app.teacher",
+  "pk": 50,
+  "fields": {
+    "first_name": "Акбала",
+    "last_name": "Қыдырходжаева",
+    "middle_name": "Оразалыевна",
+    "birth_date": "1995-09-05",
+    "education": "«Каспий педагогика және салалық технологиялар колледжі»",
+    "diploma": "diplomas/Кыдырхожаева_А.pdf",
+    "qualification": "«Мектепке дейінгі оқыту және тәрбиелеу»",
+    "position": "Педагог",
+    "experience": "5 ай",
+    "overall_experience": "5 жыл",
+    "category": "Санатсыз",
+    "phone_number": "87029964622",
+    "image": "avatars/image_2023-08-31_20-17-09.png",
+    "block": 1
+  }
+}
+]
