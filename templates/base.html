@@ -25,16 +25,17 @@
       <div class="dropdown">
         <button class="dropdown-button">Құжаттар</button>
         <div class="dropdown-content">
+          <a href="{% url 'all_files' %}">Барлық</a>
           <a href="{% url 'year_plan' %}">Жылдық жоспар</a>
-          <a href="{% url 'gpp' %}">Групповой перспективный план</a>
-          <a href="{% url 'group_cyclogram' %}">Циклограмма группы</a>
+          <a href="{% url 'gpp' %}">Топардың перспективалық жоспары</a>
+          <a href="{% url 'group_cyclogram' %}">Топтардың циклограммасы</a>
           <a href="{% url 'monitoring' %}">Мониторинг</a>
           <a href="{% url 'personal_development_map' %}">Жеке даму карты</a>
-          <a href="{% url 'methodist_monitoring' %}">Мониторинг методистов</a>
-          <a href="{% url 'm_a_d' %}">М.А.Д.</a>
-          <a href="{% url 'methodist_cyclogram' %}">Циклограмма методиста</a>
+          <a href="{% url 'methodist_monitoring' %}">Әдіскер мониторинг</a>
+          <a href="{% url 'm_a_d' %}">МАД топ мониторинг</a>
+          <a href="{% url 'methodist_cyclogram' %}">Әдіскер циклограммасы</a>
           <a href="{% url 'course' %}">Курс</a>
-          <a href="{% url 'all_files' %}">Все файлы</a>
+        </div>
         </div>
       </div>
       <!-- <a href="{% url 'schedule' %}">
