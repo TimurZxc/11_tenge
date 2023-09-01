@@ -20,5 +20,5 @@ urlpatterns = [
     path('schedule/', Schedule.as_view(), name='schedule'),
     path('rate/', TemplateView.as_view(template_name='test.html'), name='rate'),
     path('all_files/', AllFiles.as_view(template_name='all_files.html'), name='all_files'),
-    path('search/', views.Search, name='search'),
+    path('search/', views.search, name='search'),
 ] 

@@ -20,7 +20,7 @@ def uploadFile(request):
     else:
         return render(request, 'upload.html') 
     
-def Search(request):
+def search(request):
     if request.method == "POST":
         searched = request.POST['searched']
         searched_files = File.objects.filter(name__contains = searched)
