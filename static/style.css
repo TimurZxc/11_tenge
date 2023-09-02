@@ -457,13 +457,21 @@ table {
   padding: 5px;
   display: flex;
   justify-content: space-between;
+  text-align: center;
 }
-
+.adress{
+  max-width: 300px;
+}
 .contacts div{
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+
+.contacts a {
+  font-size: 25px;
+  color: white;
 }
 
 .slider-container {

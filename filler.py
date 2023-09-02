@@ -12,7 +12,7 @@ from app.models import File  # Replace 'your_app' with the actual name of your D
 from django.conf import settings
 
 # Define the folder path where your PDF files are located
-pdf_folder = 'C:/Users/Timur/Desktop/files2'
+pdf_folder = 'C:/Users/Timur/Desktop/files'
 
 
 # Define default values
@@ -22,7 +22,7 @@ default_block = 2
 
 # Iterate through the files in the folder
 for filename in os.listdir(pdf_folder):
-    if filename.endswith('.xlsx'):
+    if filename.endswith('.pdf'):
         # Extract the name without the file extension
         name = os.path.splitext(filename)[0]
 
