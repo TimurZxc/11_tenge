@@ -34,8 +34,8 @@ class File(models.Model):
         return self.name
 
     def delete(self, *args, **kwargs):
-        super().delete(*args, **kwargs)
         file_path = os.path.join(settings.MEDIA_ROOT, self.file.name)
+        super().delete(*args, **kwargs)
         os.remove(file_path)
 
 
@@ -59,8 +59,8 @@ class Teacher(models.Model):
         return f'{self.last_name} {self.first_name} {self.middle_name}'
 
     def delete(self, *args, **kwargs):
-        super().delete(*args, **kwargs)
         diploma_path = os.path.join(settings.MEDIA_ROOT, self.diploma.name)
         avatar_path = os.path.join(settings.MEDIA_ROOT, self.image.name)
+        super().delete(*args, **kwargs)
         os.remove(diploma_path)
         os.remove(avatar_path)
