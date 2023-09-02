@@ -1,5 +1,6 @@
 from django.forms import ModelForm
 from .models import Teacher, File
+from django import forms
 
 class FileForm(ModelForm):
     class Meta:
@@ -15,6 +16,7 @@ class FileForm(ModelForm):
         
 
 class TeacherForm(ModelForm):
+    birth_date = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}), input_formats=['%Y-%m-%d'])    
     class Meta:
         model = Teacher
         fields = ('__all__')

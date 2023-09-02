@@ -9,7 +9,8 @@ block_choices = [('1', '1 блок'),
 class File(models.Model):
     year_choices = [('2020-2021', '2020-2021'),
                     ('2021-2022', '2021-2022'),
-                    ('2022-2023', '2022-2023')]
+                    ('2022-2023', '2022-2023'),
+                    ('2023-2024', '2023-2024')]
 
     tag_choices = [('schedule', 'Кесте'),
                    ('course', 'Курс'),
@@ -59,8 +60,10 @@ class Teacher(models.Model):
         return f'{self.last_name} {self.first_name} {self.middle_name}'
 
     def delete(self, *args, **kwargs):
-        diploma_path = os.path.join(settings.MEDIA_ROOT, self.diploma.name)
-        avatar_path = os.path.join(settings.MEDIA_ROOT, self.image.name)
+        if self.diploma:
+            diploma_path = os.path.join(settings.MEDIA_ROOT, self.diploma.name)
+            os.remove(diploma_path)
+        if self.image:
+            avatar_path = os.path.join(settings.MEDIA_ROOT, self.image.name)
+            os.remove(avatar_path)
         super().delete(*args, **kwargs)
-        os.remove(diploma_path)
-        os.remove(avatar_path)

@@ -18,9 +18,9 @@
 <div class="card">
   <div class="image">
     {% if teacher.image %}
-    <img style="height: 300px; width: 300px; border-radius: 50%;" src="{{ teacher.image.url }}" alt="">
+    <img class="teacher_image" src="{{ teacher.image.url }}" alt="">
     {% else %}
-    <img style="height: 300px; width: 300px;" src="../media/avatars/user-244.svg" alt="">
+    <img class="teacher_image" src="../media/avatars/user-244.svg" alt="">
     {% endif %}
   </div>
   <div class="info">

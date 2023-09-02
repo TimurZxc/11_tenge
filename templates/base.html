@@ -37,9 +37,6 @@
           <a href="{% url 'course' %}">Курс</a>
         </div>
         </div>
-      <!-- <a href="{% url 'schedule' %}">
-                <li>Расписание занятий</li>
-            </a> -->
     </ul>
     <a href="/#contacts" class="contact">Байланыс</a>
   </nav>
@@ -47,7 +44,7 @@
   <div class="warm"></div>
   <form class="search" method="POST" action="{% url 'search' %}">
     {% csrf_token %}
-    <input placeholder="Название файла" type="search" name="searched">
+    <input placeholder="Файлдың аты" type="search" name="searched">
     <button type="submit">Найти</button>
   </form>
   <main class="container">{% block content %} {% endblock %}</main>

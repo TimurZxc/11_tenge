@@ -5,6 +5,7 @@ from django.urls import reverse_lazy
 from app.forms import FileForm, TeacherForm
 from .models import File, Teacher
 from django.views import generic
+import os
 
 def uploadForm(request):
     return render(request, 'upload.html')
@@ -30,6 +31,16 @@ class FilesList(generic.ListView):
 
     def get_queryset(self):
         return File.objects.order_by('-id')
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        
+        # Fetch image filenames from the directory
+        image_directory = "static/images"
+        image_filenames = [filename for filename in os.listdir(image_directory) if not filename.endswith(".svg")]
+        
+        context['image_filenames'] = image_filenames
+        return context
     
 class Teachers(generic.ListView):
     model = File

@@ -18,6 +18,7 @@ body {
   overflow-x: hidden;
 }
 
+
 .container {
   width: 80%;
   margin: 40px auto;
@@ -34,7 +35,8 @@ body {
   position: absolute;
   transform: rotate(-54.374deg);
   width: 267px;
-  height: 900.793px;
+  max-height: 900.793px;
+  height: 100%;
   left: 15%;
   z-index: -10;
   flex-shrink: 0;
@@ -51,7 +53,8 @@ body {
   position: absolute;
   transform: rotate(65.712deg);
   width: 267px;
-  height: 1000px;
+  max-height: 1000px;
+  height: 100%;
   right: 25%;
   top: 30%;
   flex-shrink: 0;
@@ -615,6 +618,9 @@ table {
   .info{
     padding: 10px;
   }
+  .delete{
+    top: 5px;
+  }
 }
 
 .search{
@@ -636,7 +642,7 @@ table {
   color: white;
 }
 .search input::placeholder{
-  color: white;
+  color: grey;
 }
 .search button{
   color: white;
@@ -660,7 +666,11 @@ table {
   margin: 0 auto;
   gap:20px;
 }
-
+.teacher_image{
+  height: 300px;
+  width: 300px; 
+  border-radius: 50%;
+}
 .upload input{
   padding: 7px 10px;
   font-size: 18px;
@@ -764,4 +774,107 @@ table {
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+@media (max-width:1350px) {
+  .main-section > .holder{
+    padding: 20px;
+  }
+}
+@media (max-width:1070px) {
+  .main-section > .holder{
+    padding: 0;
+  }
+  .contacts{
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+}
+@media (max-width:800px) {
+  .cold{
+    width: 100px;
+    height: 400px;
+  }
+  .warm{
+    width: 100px;
+    height: 400px;
+  }
+  .main-section{
+    flex-direction: column;
+  }
+  .content{
+    width: 100%;
+  }
+  .main-section > .holder{
+    padding: 50px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 630px) {
+  .warm{
+    display: none;
+  }
+  .cold{
+    display: none;
+  }
+  .container{
+    width: 90%;
+  }
+  .main-section > .holder{
+    padding: 10px;
+  }
+  .main-section > .holder > .image > img{
+    width: fit-content;
+    position: relative;
+  }
+}
+@media (max-width:450px) {
+  .slider-container{
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .header{
+    text-align: center;
+  }
+  .header h1{
+    width: 100%;
+  }
+  .content{
+    text-align: center;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .search{
+    flex-direction: column;
+  }
+  .search input{
+    width: 100%;
+  }
+  .content .contact{
+    margin: 20px auto 0 auto;
+  }
+  .content h1{
+    margin-bottom: 20px;
+  }
+  .logo{
+    margin-top: 20px;
+  }
+  nav ul{
+    justify-content: center;
+    gap: 15px;
+  }
+  .info span{
+    flex-direction: column;
+    text-align: center;
+  }
+  .info{
+    gap: 50px;
+  }
+  .teacher_image{
+    width: 100%;
+    height: auto;
+  }
 }
