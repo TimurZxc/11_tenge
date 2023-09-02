@@ -2,12 +2,12 @@ from datetime import timedelta
 from pathlib import Path
 import os
 
-# BASE_DIR = Path(__file__).resolve().parent.parent
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-SECRET_KEY = 'django-insecure-6nt70lo)vvm$oshcjkk^0e=z+g&-$yjs950!hncs@=fe-q+#3a'
+SECRET_KEY = 'django-insecure-9u=q%^)96^94u_x0v!_kakl8&+hmnztu4z0+u+hseioqr3!yq3'
 
-DEBUG = True
+DEBUG = False
 
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
@@ -42,8 +42,8 @@ CSRF_TRUSTED_ORIGINS = ['https://tenge-11.jcloud.kz']
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        # 'DIRS': [BASE_DIR / 'templates'],
-        'DIRS': ['templates'],
+        'DIRS': [BASE_DIR / 'templates'],
+        #'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -58,23 +58,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'root.wsgi.application'
 
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': 'db.sqlite3', 
-   }
-}
+#DATABASES = {
+#   'default': {
+#       'ENGINE': 'django.db.backends.sqlite3',
+#       'NAME': 'db.sqlite3', 
+#   }
+#}
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-#         'NAME': 'postgres',
-#         'USER': 'webadmin',
-#         'PASSWORD': 'NZMzqx30691',
-#         'HOST': 'node49771-tenge-11.jcloud.kz',
-#         'PORT': '5432',
-#     }
-# }
+DATABASES = {
+     'default': {
+         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+         'NAME': 'postgres',
+         'USER': 'webadmin',
+         'PASSWORD': 'NZMzqx30691',
+         'HOST': 'node49771-tenge-11.jcloud.kz',
+         'PORT': '5432',
+     }
+}
 
 AUTH_PASSWORD_VALIDATORS = [
     {
@@ -106,18 +106,21 @@ USE_I18N = True
 
 USE_TZ = True
 
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
-# STATIC_ROOT = '/var/www/webroot/ROOT/static'
+STATIC_URL = 'static/'
+#STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+#STATICFILES_DIRS = [os.path.join(BASE_DIR, "static")]
+STATIC_ROOT = '/var/www/webroot/ROOT/static'
 # STATICFILES_DIRS = [
 #     BASE_DIR / "static",
 #     "/var/www/webroot/ROOT/static",
 # ]
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+#MEDIA_ROOT = '/var/www/webroot/ROOT/media'
 MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
 
 
 
