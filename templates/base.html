@@ -37,7 +37,6 @@
           <a href="{% url 'course' %}">Курс</a>
         </div>
         </div>
-      </div>
       <!-- <a href="{% url 'schedule' %}">
                 <li>Расписание занятий</li>
             </a> -->
@@ -49,7 +48,7 @@
   <form class="search" method="POST" action="{% url 'search' %}">
     {% csrf_token %}
     <input placeholder="Название файла" type="search" name="searched">
-    <button>Найти</button>
+    <button type="submit">Найти</button>
   </form>
   <main class="container">{% block content %} {% endblock %}</main>
 
