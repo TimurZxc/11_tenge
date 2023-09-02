@@ -745,9 +745,15 @@ table {
   color: white;
 }
 
-.confirm:hover {
+.delete_file{
+  border: 1px solid #ff2727;
   color: red;
-  transition: 0.5s;
+}
+
+.delete_file:hover{
+  border: 1px solid #ff2727;
+  background-color: #ff2727;
+  color: white;
 }
 
 .delete {

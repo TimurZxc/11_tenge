@@ -267,3 +267,11 @@ class DeleteTeacher(generic.DeleteView):
     model = Teacher
     template_name='delete_teacher.html'
     success_url = reverse_lazy('teachers')
+
+class DeleteFile(generic.DeleteView):
+    model = File
+    template_name='delete_file.html'
+    success_url = reverse_lazy('all_files')
+
+def custom_404(request, exception):
+    return render(request, '404.html', status=404)

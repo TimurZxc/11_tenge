@@ -135,7 +135,7 @@ if DEBUG == True:
     MEDIA_URL = '/media/'
 else:
     STATIC_URL = 'static/'
-    STATIC_ROOT = '/var/www/webroot/ROOT/static'
+    STATIC_ROOT = '/var/www/webroot/ROOT/staticfiles'
     STATICFILES_DIRS = ['/var/www/webroot/ROOT/static']
     MEDIA_ROOT = '/var/www/webroot/ROOT/media'
     MEDIA_URL = '/media/'

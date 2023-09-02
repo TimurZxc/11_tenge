@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form method="post" class="sure">{% csrf_token %}
+    <h3>Сіз "{{ object }}" файлды жойғыңыз келетініне сенімдісіз бе?</h3>
+    {{ form }}
+    <div style="display: flex; gap: 50px; align-items: center;">
+        <a href="{% url 'all_files' %}" class="contact">Бас тарту</a>
+        <input type="submit" value="Иә, жою" class="confirm">
+    </div>
+</form>
+{%  endblock %}
