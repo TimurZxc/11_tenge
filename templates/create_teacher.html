@@ -1,0 +1,6 @@
+{% extends 'base.html' %} {% block content %}
+<form class="upload" method="post" enctype="multipart/form-data">
+  {% csrf_token %} {{form.as_p}}
+  <button type="submit">Қосу</button>
+</form>
+{% endblock %}

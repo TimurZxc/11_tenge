@@ -1,24 +1,18 @@
 from typing import Any
 from django.db.models.query import QuerySet
 from django.shortcuts import render, redirect
+from django.urls import reverse_lazy
+from app.forms import FileForm, TeacherForm
 from .models import File, Teacher
 from django.views import generic
 
 def uploadForm(request):
     return render(request, 'upload.html')
-
-def uploadFile(request):
-    if request.method == 'POST':
-        filename = request.POST['filename']
-        year = request.POST['year']
-        block = request.POST['block']
-        tag = request.POST['tag']
-        file = request.FILES['file']
-        file_obj = File(name=filename, file=file, year=year, block=block, tag=tag)
-        file_obj.save()
-        return redirect('upload')
-    else:
-        return render(request, 'upload.html') 
+    
+class UploadFile(generic.CreateView):
+    form_class = FileForm
+    template_name = 'upload.html'
+    success_url = reverse_lazy('all_files')
     
 def search(request):
     if request.method == "POST":
@@ -264,4 +258,12 @@ class AllFiles(generic.ListView):
             queryset = queryset.filter(block='1')
         return queryset
 
+class CreateTeacher(generic.CreateView):
+    form_class = TeacherForm
+    template_name = 'create_teacher.html'
+    success_url = reverse_lazy('teachers')
 
+class DeleteTeacher(generic.DeleteView):
+    model = Teacher
+    template_name='delete_teacher.html'
+    success_url = reverse_lazy('teachers')
