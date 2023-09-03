@@ -5,7 +5,7 @@ from django import forms
 class FileForm(ModelForm):
     class Meta:
         model = File
-        fields = ('__all__')
+        fields = ('name','file','tag','year','block')
         labels = {
             'name': 'Құжаттың аты',
             'file': 'Құжаттың өзі',
@@ -13,7 +13,7 @@ class FileForm(ModelForm):
             'year': 'Жылы',
             'block': 'Болк',
         }
-        
+       
 
 class TeacherForm(ModelForm):
     birth_date = forms.DateField(widget=forms.DateInput(attrs={'type': 'date'}), input_formats=['%Y-%m-%d'])    

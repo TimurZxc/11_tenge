@@ -2,10 +2,11 @@ from typing import Any
 from django.db.models.query import QuerySet
 from django.shortcuts import render, redirect
 from django.urls import reverse_lazy
-from app.forms import FileForm, TeacherForm
+from app.forms import *
 from .models import File, Teacher
 from django.views import generic
 import os
+from django.shortcuts import get_object_or_404
 
 def uploadForm(request):
     return render(request, 'upload.html')
@@ -283,6 +284,35 @@ class DeleteFile(generic.DeleteView):
     model = File
     template_name='delete_file.html'
     success_url = reverse_lazy('all_files')
+
+class FileUpdateView(generic.UpdateView):
+    form_class = FileForm
+    template_name = 'file_update.html' 
+    success_url = reverse_lazy('all_files')  
+
+    def form_valid(self, form):
+        instance = form.save(commit=False)
+        instance.update(**form.cleaned_data)  
+        return super().form_valid(form)
+
+    def get_object(self, queryset=None):
+        return get_object_or_404(File, id=self.kwargs['pk'])
+    
+class TeacherUpdateView(generic.UpdateView):
+    template_name = 'teacher_update.html'  
+
+    def get(self, request, pk):
+        teacher = get_object_or_404(Teacher, pk=pk)
+        form = TeacherForm(instance=teacher)
+        return render(request, self.template_name, {'form': form, 'teacher': teacher})
+
+    def post(self, request, pk):
+        teacher = get_object_or_404(Teacher, pk=pk)
+        form = TeacherForm(request.POST, instance=teacher)
+        if form.is_valid():
+            form.save()
+            return redirect('teachers')
+        return render(request, self.template_name, {'form': form, 'teacher': teacher})
 
 def custom_404(request, exception):
     return render(request, '404.html', status=404)

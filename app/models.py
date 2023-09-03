@@ -12,7 +12,9 @@ class File(models.Model):
                     ('2022-2023', '2022-2023'),
                     ('2023-2024', '2023-2024')]
 
-    tag_choices = [('schedule', 'Кесте'),
+    tag_choices = [
+                   ('common', 'Анықталмаған'),
+                   ('schedule', 'Кесте'),
                    ('course', 'Курс'),
                    ('methodist_cyclogram', 'Әдіскер циклограмасы'),
                    ('mad', 'МАД'),
@@ -33,6 +35,11 @@ class File(models.Model):
 
     def __str__(self):
         return self.name
+    
+    def update(self, **kwargs):
+        for field, value in kwargs.items():
+            setattr(self, field, value)
+        self.save()
 
     def delete(self, *args, **kwargs):
         file_path = os.path.join(settings.MEDIA_ROOT, self.file.name)
@@ -59,6 +66,11 @@ class Teacher(models.Model):
     def __str__(self):
         return f'{self.last_name} {self.first_name} {self.middle_name}'
 
+    def update(self, **kwargs):
+        for field, value in kwargs.items():
+            setattr(self, field, value)
+        self.save()
+        
     def delete(self, *args, **kwargs):
         if self.diploma:
             diploma_path = os.path.join(settings.MEDIA_ROOT, self.diploma.name)

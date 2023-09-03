@@ -24,4 +24,6 @@ urlpatterns = [
     path('rate/', TemplateView.as_view(template_name='test.html'), name='rate'),
     path('all_files/', AllFiles.as_view(template_name='all_files.html'), name='all_files'),
     path('search/', views.search, name='search'),
+    path('file/<int:pk>/update/', FileUpdateView.as_view(), name='update_file'),
+    path('teacher/<int:pk>/update/', TeacherUpdateView.as_view(), name='update_teacher'),
 ] 

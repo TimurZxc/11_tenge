@@ -204,6 +204,7 @@ nav > ul > a > li:hover::after {
 .dropdown-content a:hover {
   background-color: #5454d4;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
 .dropdown:hover .dropdown-content {
@@ -374,10 +375,12 @@ table {
 
 .custom-select > option:hover {
   background-color: #5454d4;
+  transition: 0.5s;
 }
 
 .custom-select:hover {
   background-color: #5454d4;
+  transition: 0.5s;
 }
 
 .custom-select:focus {
@@ -666,12 +669,20 @@ table {
   margin: 0 auto;
   gap:20px;
 }
+.upload p a{
+  color: white;
+  text-decoration: none;
+}
+.upload p a:hover{
+  text-decoration: underline;
+}
 .teacher_image{
   height: 300px;
   width: 300px; 
   border-radius: 50%;
 }
 .upload input{
+  width: 100%;
   padding: 7px 10px;
   font-size: 18px;
   outline: none;
@@ -702,6 +713,7 @@ table {
 }
 .upload select option:hover{
   background-color: #5454d4;
+  transition: 0.5s;
 }
 .upload button{
   width: 50%;
@@ -739,22 +751,23 @@ table {
   width: fit-content;
   text-align: center;
   font-size: 16px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
-  letter-spacing: -0.5px;
   border-radius: 5px;
   border: 1px solid #fff;
-  backdrop-filter: blur(1px);
   text-decoration: none;
   padding: 10px 8px;
   transition: all;
-  margin: 20px 0;
   border: 1px solid #ff2727;
-  background-color: #ff2727;
-  color: white;
+  color: #ff2727;
+  top:20px;
+  background-color: transparent;
+  cursor: pointer;
 }
-
+.confirm, .delete:hover{
+  color: white;
+  background-color: #ff2727;
+  transition: 0.5s;
+}
 .delete_file{
   border: 1px solid #ff2727;
   color: red;
@@ -764,18 +777,53 @@ table {
   border: 1px solid #ff2727;
   background-color: #ff2727;
   color: white;
+  transition: 0.5s;
 }
-
+.update_file{
+  border: 1px solid #70ab3f;
+  color: #70ab3f;
+}
+.update_file:hover{
+  border: 1px solid #70ab3f;
+  background-color: #70ab3f !important;
+  color: white;
+  transition: 0.5s;
+}
 .delete {
   display: block;
   position: absolute;
-  background-color: #d14242b8;
-  right: 2%;
+  right: 20px;
   height: 40px;
-  width: 40px;
-  border-radius: 50%;
+  width: fit-content;
 }
-
+.delete:hover{
+  background-color: #ff2727;
+  color: white;
+  transition: 0.5s;  
+}
+.update_teacher{
+  display: block;
+  position: absolute;
+  border: #70ab3f solid 1px !important;
+  background-color: transparent !important;
+  color: #70ab3f !important;
+  right: 100px;
+  height: 40px;
+  width: fit-content;
+  top:20px;
+}
+.update_teacher:hover{
+  color: white !important;
+  background-color: #70ab3f !important;
+  border: none;
+  transition: 0.5s;
+}
+#diploma-clear_id{
+  width: auto !important;
+}
+#image-clear_id{
+  width: auto !important;
+}
 @media (max-width:1350px) {
   .main-section > .holder{
     padding: 20px;
@@ -810,9 +858,22 @@ table {
     padding: 50px;
     width: 100%;
   }
+  .card .image{
+    margin: 30px auto 0 auto;
+  }
+  .upload{
+    width: 90%;
+  }
 }
 
 @media (max-width: 630px) {
+  nav ul{
+    justify-content: center;
+    gap: 15px;
+  }
+  nav{
+    flex-direction: column;
+  }
   .warm{
     display: none;
   }
@@ -830,6 +891,11 @@ table {
     position: relative;
   }
 }
+@media (max-width:518px) {
+  .delete_file{
+    margin: 10px auto;
+  }
+}
 @media (max-width:450px) {
   .slider-container{
     width: 100%;
@@ -843,9 +909,6 @@ table {
   }
   .content{
     text-align: center;
-  }
-  nav{
-    flex-direction: column;
   }
   .search{
     flex-direction: column;
@@ -862,10 +925,6 @@ table {
   .logo{
     margin-top: 20px;
   }
-  nav ul{
-    justify-content: center;
-    gap: 15px;
-  }
   .info span{
     flex-direction: column;
     text-align: center;
@@ -876,5 +935,8 @@ table {
   .teacher_image{
     width: 100%;
     height: auto;
+  }
+  .update_teacher{
+    left: 20px;
   }
 }
