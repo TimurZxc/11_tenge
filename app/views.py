@@ -7,6 +7,7 @@ from .models import File, Teacher
 from django.views import generic
 import os
 from django.shortcuts import get_object_or_404
+from django.conf import settings
 
 def uploadForm(request):
     return render(request, 'upload.html')
@@ -316,3 +317,4 @@ class TeacherUpdateView(generic.UpdateView):
 
 def custom_404(request, exception):
     return render(request, '404.html', status=404)
+

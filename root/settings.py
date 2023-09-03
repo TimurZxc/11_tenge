@@ -2,7 +2,7 @@ from datetime import timedelta
 from pathlib import Path
 import os
 
-DEBUG = True
+DEBUG = False
 
 if DEBUG == True:
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -134,10 +134,13 @@ if DEBUG == True:
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
     MEDIA_URL = '/media/'
 else:
-    STATIC_URL = 'static/'
-    STATIC_ROOT = '/var/www/webroot/ROOT/staticfiles'
+    STATIC_URL = '/static/'
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     STATICFILES_DIRS = ['/var/www/webroot/ROOT/static']
-    MEDIA_ROOT = '/var/www/webroot/ROOT/media'
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
     MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
