@@ -37,7 +37,7 @@ class FilesList(generic.ListView):
         context = super().get_context_data(**kwargs)
         
         # Fetch image filenames from the directory
-        image_directory = "static/images"
+        image_directory = os.path.join(settings.STATIC_ROOT, 'images')
         image_filenames = [filename for filename in os.listdir(image_directory) if not filename.endswith(".svg")]
         
         context['image_filenames'] = image_filenames
