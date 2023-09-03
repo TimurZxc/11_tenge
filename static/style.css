@@ -940,3 +940,16 @@ table {
     left: 20px;
   }
 }
+
+.contasiner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.notfound{
+ height: 400px;
+ width: auto;
+}

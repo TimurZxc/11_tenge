@@ -260,7 +260,7 @@ class AllFiles(generic.ListView):
     model = File
     template_name = 'all_files.html'
     context_object_name = 'files'
-    paginate_by = 15
+    paginate_by = 10
 
     def get_queryset(self):
         queryset = File.objects.filter(tag='common')
