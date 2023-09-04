@@ -46,7 +46,7 @@
   <form class="search" method="POST" action="{% url 'search' %}">
     {% csrf_token %}
     <input placeholder="Файлдың аты" type="search" name="searched">
-    <button type="submit">Найти</button>
+    <button type="submit">Іздеу</button>
   </form>
   <main class="container">{% block content %} {% endblock %}</main>
 

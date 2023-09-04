@@ -26,8 +26,8 @@
   <div class="info">
     <span>
       {% if request.user.is_authenticated %}
-      <a href="{% url 'update_teacher' teacher.id %}"><button class="update_teacher">Жаңарту</button></a>
-      <a href="{% url 'delete_teacher' teacher.id %}" class="delete">Жою</a>
+      <a href="{% url 'update_teacher' teacher.id %}"><button class="update_teacher"><i class="fa-solid fa-pencil"></i></button></a>
+      <a href="{% url 'delete_teacher' teacher.id %}" class="delete"><i class="fa-solid fa-trash"></i></a>
       {% endif %}
     </span>
     <span>
@@ -69,7 +69,8 @@
     <span>
       <h3>Диплом:</h3>
       {% if teacher.diploma %}
-      <a href="{{ teacher.diploma.url }}" download> <button>Скачать</button></a>
+      <a href="{{ teacher.diploma.url }}" target="_blank"><button><i class="fa-solid fa-file"></i></button></a>
+      <a href="{{ teacher.diploma.url }}" download> <button><i class="fa-solid fa-download"></i></button></a>
       {% else %}
       <a href="#" download> <button disabled>Отсутствует</button></a>
       {% endif %}

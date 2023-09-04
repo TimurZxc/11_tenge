@@ -2,7 +2,7 @@
 
 {% block content%}
     <center>
-        <h2>Результаты по запросу: {{ searched }}</h2>
+        <h2>Сіздің сұранысыңыз бойынша нәтижелер: {{ searched }}</h2>
         <br>
         <table>
            <tbody>
@@ -15,13 +15,14 @@
              {% for file in searched_files %}
              <tr>
                <td>{{ file.block }}</td>
-               <td>{{ file.name }}</td>
+               <td><a href="{{ file.file.url }}" target="_blank">{{ file.name }}</a></td>
+
                <td>{{ file.year }}</td>
                <td>
-                <a href="{{ file.file.url }}" download> <button>Скачать</button></a>
+                <a href="{{ file.file.url }}" download> <button><i class="fa-solid fa-download"></i></button></a>
                 {% if request.user.is_authenticated %}
-                <a href="{% url 'delete_file' file.id %}"><button class="delete_file">Жою</button></a>
-                <a href="{% url 'update_file' file.id %}"><button class="update_file">Жаңарту</button></a>
+                <a href="{% url 'delete_file' file.id %}"><button class="delete_file"><i class="fa-solid fa-trash"></i></button></a>
+                <a href="{% url 'update_file' file.id %}"><button class="update_file"><i class="fa-solid fa-pencil"></i></button></a>
                 {% endif %}
                </td>
              </tr>

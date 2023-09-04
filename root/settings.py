@@ -1,5 +1,6 @@
 from datetime import timedelta
 from pathlib import Path
+from django.contrib.admin.sites import AdminSite
 import os
 
 DEBUG = True
@@ -118,6 +119,8 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
+REDIRECT_FIELD_NAME = '/'
+LOGIN_REDIRECT_URL = '/'
 
 LANGUAGE_CODE = 'kk'
 
@@ -128,8 +131,8 @@ USE_I18N = True
 USE_TZ = True
 
 if DEBUG == True:
-    STATIC_URL = 'static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+    STATIC_URL = '/static/'
+    # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
     MEDIA_URL = '/media/'
