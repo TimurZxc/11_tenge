@@ -1,7 +1,9 @@
 {% extends 'base.html' %} {% block content %}
 <main>
   <form class="upload" method="post" enctype="multipart/form-data">
-    {% csrf_token %} {{form.as_p}}
+    {% csrf_token %}   <table>
+    {{form.as_table}}
+  </table>
     <button type="submit">Жүктеп алу</button>
   </form>
 </main>
