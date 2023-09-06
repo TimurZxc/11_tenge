@@ -14,6 +14,7 @@ from django.shortcuts import get_object_or_404
 from django.conf import settings
 from django.contrib.auth.views import LogoutView
 from django.contrib.admin import AdminSite
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 class CustomLogoutView(LogoutView):
     next_page = '/'
@@ -59,10 +60,7 @@ class FilesList(generic.ListView):
         context = super().get_context_data(**kwargs)
         
         # Fetch image filenames from the directory
-        if settings.DEBUG:
-            image_directory = os.path.join(settings.STATICFILES_DIRS[0], 'images')
-        else:
-            image_directory = os.path.join(settings.STATIC_ROOT, 'images')
+        image_directory = os.path.join(settings.STATICFILES_DIRS[0], 'images')
         image_filenames = [filename for filename in os.listdir(image_directory) if not filename.endswith(".svg")]
         
         context['image_filenames'] = image_filenames
@@ -295,22 +293,22 @@ class AllFiles(generic.ListView):
             queryset = queryset.filter(block='1')
         return queryset
 
-class CreateTeacher(generic.CreateView):
+class CreateTeacher(LoginRequiredMixin, generic.CreateView):
     form_class = TeacherForm
     template_name = 'create_teacher.html'
     success_url = reverse_lazy('teachers')
 
-class DeleteTeacher(generic.DeleteView):
+class DeleteTeacher(LoginRequiredMixin, generic.DeleteView):
     model = Teacher
     template_name='delete_teacher.html'
     success_url = reverse_lazy('teachers')
 
-class DeleteFile(generic.DeleteView):
+class DeleteFile(LoginRequiredMixin, generic.DeleteView):
     model = File
     template_name='delete_file.html'
     success_url = reverse_lazy('all_files')
 
-class FileUpdateView(generic.UpdateView):
+class FileUpdateView(LoginRequiredMixin, generic.UpdateView):
     form_class = FileForm
     template_name = 'file_update.html' 
     success_url = reverse_lazy('all_files')  
@@ -323,7 +321,7 @@ class FileUpdateView(generic.UpdateView):
     def get_object(self, queryset=None):
         return get_object_or_404(File, id=self.kwargs['pk'])
     
-class TeacherUpdateView(generic.UpdateView):
+class TeacherUpdateView(LoginRequiredMixin, generic.UpdateView):
     template_name = 'teacher_update.html'  
 
     def get(self, request, pk):
@@ -341,4 +339,5 @@ class TeacherUpdateView(generic.UpdateView):
 
 def custom_404(request, exception):
     return render(request, '404.html', status=404)
+
 

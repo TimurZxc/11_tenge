@@ -3,7 +3,7 @@ from pathlib import Path
 from django.contrib.admin.sites import AdminSite
 import os
 
-DEBUG = True
+DEBUG = False
 
 if DEBUG == True:
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -119,7 +119,7 @@ REST_FRAMEWORK = {
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     )
 }
-REDIRECT_FIELD_NAME = '/'
+
 LOGIN_REDIRECT_URL = '/'
 
 LANGUAGE_CODE = 'kk'
@@ -138,12 +138,15 @@ if DEBUG == True:
     MEDIA_URL = '/media/'
 else:
     STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+    #STATIC_ROOT = os.path.join(BASE_DIR, 'static')
     STATICFILES_DIRS = ['/var/www/webroot/ROOT/static']
     MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
     MEDIA_URL = '/media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+
 
 
 
