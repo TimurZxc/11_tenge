@@ -42,14 +42,38 @@
     <tr>
       <td colspan="4">
         {% if page_obj.has_previous %}
-        <a {% if request.GET.block %}href="?block={{request.GET.block}}&page={{page_obj.previous_page_number}}" {% endif %}
-        style="color: #5454d4; text-decoration: none; font-size: 24px; font-weight: 900;"><</a>
+          <a  
+            {% if request.GET.block %}
+              href="?block={{request.GET.block}}&page={{page_obj.previous_page_number}}" 
+            {% else %}
+              href="?page={{page_obj.previous_page_number}}" 
             {% endif %}
-            <span style="margin-inline: 15px;">{{page_obj.number}} бет {{page_obj.paginator.num_pages}} беттен</span>
-            {% if page_obj.has_next %}
-            <a {% if request.GET.block %}href="?block={{request.GET.block}}&page={{page_obj.next_page_number}}" {% endif %}
-            style="color: #5454d4; text-decoration: none; font-size: 24px; font-weight: 900;">></a>
-            {% endif %}
+            style="color: #5454d4; 
+            text-decoration: none; 
+            font-size: 24px; 
+            font-weight: 900;">
+              <
+          </a>
+        {% endif %}
+
+        <span style="margin-inline: 15px;">
+          {{page_obj.number}} бет {{page_obj.paginator.num_pages}} беттен
+        </span>
+
+        {% if page_obj.has_next %}
+        <a 
+          {% if request.GET.block %}
+            href="?block={{request.GET.block}}&page={{page_obj.next_page_number}}" 
+          {% else %}
+            href="?page={{page_obj.next_page_number}}" 
+          {% endif %}
+          style="color: #5454d4; 
+          text-decoration: none; 
+          font-size: 24px; 
+          font-weight: 900;">
+          >
+        </a>
+        {% endif %}
       </td>
     </tr>
   </tbody>

@@ -1,67 +1,76 @@
-{% extends 'base.html' %}
-{% load static %} 
-{% block content %}
+{% extends 'base.html' %} {% load static %} {% block content %}
 <section class="main-section">
-    <div class="content">
-        <h1>№11 "Теңге" балабақшасы: бақыт пен оқудың кемпірқосағы</h1>
-        <span>
-            №11 "Теңге" жайлы балабақшамызға қош келдіңіз! Біз сіздің кішкентайыңызға
-            қамқорлық, көңіл бөлу және балалық шақтың әр күнінен ләззат алу мүмкіндігі
-            берілген жерміз. Біздің балабақша қаланың қақ ортасында орналасқан және сіздің
-            балаңыздың дамуы үшін тамаша ортаны ұсынады.
-        </span>
-        <a href="#contacts" class="contact">
-            Байланысқа шығу
-        </a>
+  <div class="content">
+    <h1>Жаңаөзен қаласы әкімдігінің «№11 «Тенге» бөбекжайы» жедел басқару құқығындағы мемлекеттік коммуналдық қазыналық кәсіпорнын</h1>
+    <span>
+      Қазіргі таңда үздіксіз білім беру еліміздің ертеңі өсіп келе жатқан жас
+      ұрпақтың білімінің тереңдігімен өлшенеді. Білімді, жан-жақты қабілетті
+      ұрпақ – ұлтымыздың баға жетпес қазынасы. Балабақша – барлық тәрбие мен
+      білімнің ең алғашқы баспалдағы іспеттес. Мұндағы тәрбие мен білім
+      балалардың табиғи мінезін, қабілетін ерте жастан дамытады. Бала –
+      болашағымыз, бала – қуанышымыз. Ендеше мектепке дейінгі үздіксіз
+      тәрбиемен, біліммен қамту өзіміздің басты мақсаттарымыздың бірі екенін
+      қуана айта аламыз.
+    </span>
+    <a href="#contacts" class="contact"> Байланысқа шығу </a>
+  </div>
+  <div class="holder">
+    <div class="image">
+      <img
+        src="../static/images/FB_IMG_1693214004181.jpg"
+        alt=""
+        loading="lazy"
+      />
     </div>
-    <div class="holder">
-        <div class="image">
-            <img src="../static/images/FB_IMG_1693214004181.jpg" alt="" loading="lazy">
-        </div>
-        <img src="../static/images/icon.svg" class="icon" alt="icon">
-        <img src="../static/images/icon1.svg" class="icon1" alt="icon1">
-        <img src="../static/images/icon2.svg" class="icon2" alt="icon2">
-        <img src="../static/images/icon3.svg" class="icon3" alt="icon3">
-    </div>
+    <img src="../static/images/icon.svg" class="icon" alt="icon" />
+    <img src="../static/images/icon1.svg" class="icon1" alt="icon1" />
+    <img src="../static/images/icon2.svg" class="icon2" alt="icon2" />
+    <img src="../static/images/icon3.svg" class="icon3" alt="icon3" />
+  </div>
 </section>
 <section>
-    <div class="header">
-        <h1>Неліктен біз ең жақсы таңдау болып табыламыз?</h1>
-    </div>
+  <div class="header">
+    <h1>Неліктен біз ең жақсы таңдау болып табыламыз?</h1>
+  </div>
 </section>
 <section class="slider-container">
-    <div class="slider">
-        {% for image_filename in image_filenames %}
-        <img src="{% static 'images/' %}{{ image_filename }}" alt="Image {{ forloop.counter }}">
-        {% endfor %}
-    </div>
-    <button id="prevBtn" onclick="prevSlide()"><</button>
-            <button id="nextBtn" onclick="nextSlide()">></button>
+  <div class="slider">
+    {% for image_filename in image_filenames %}
+    <img
+      src="{% static 'images/' %}{{ image_filename }}"
+      alt="Image {{ forloop.counter }}"
+    />
+    {% endfor %}
+  </div>
+  <button id="prevBtn" onclick="prevSlide()"><</button>
+  <button id="nextBtn" onclick="nextSlide()">></button>
 </section>
 
 <section id="contacts" class="contacts">
-    <div>
-        <h1>Номер телефона</h1>
-        <h3>87293449761</h3>
+  <div>
+    <h1>Номер телефона</h1>
+    <h3>87293449761</h3>
+  </div>
+  <div>
+    <h1>Электронная почта</h1>
+    <h3>21_nazerke@mail.ru</h3>
+  </div>
+  <div class="adress">
+    <h1>Адрес</h1>
+    <h3>Жаңаөзен қаласы, Тенге кенті Ж.Бейнеубаев - 100</h3>
+  </div>
+  <div>
+    <h1>Әлеуметтік медиа</h1>
+    <div style="display: flex; flex-direction: row">
+      <a href="https://instagram.com/11_tenge_bobekzhai?igshid=OGQ5ZDc2ODk2ZA=="
+        ><i class="fa-brands fa-instagram"></i
+      ></a>
+      <a
+        href="https://www.facebook.com/profile.php?id=100029339196013&mibextid=D4KYlr"
+        ><i class="fa-brands fa-facebook"></i
+      ></a>
     </div>
-    <div>
-        <h1>Электронная почта</h1>
-        <h3>21_nazerke@mail.ru</h3>
-    </div>
-    <div class="adress">
-        <h1>Адрес</h1>
-        <h3>Жаңаөзен қаласы, Тенге кенті Ж.Бейнеубаев - 100</h3>
-    </div>
-    <div>
-        <h1>Әлеуметтік медиа</h1>
-        <div style="display: flex; flex-direction: row;">
-            <a href="https://instagram.com/11_tenge_bobekzhai?igshid=OGQ5ZDc2ODk2ZA=="><i
-                    class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100029339196013&mibextid=D4KYlr"><i
-                    class="fa-brands fa-facebook"></i></a>
-        </div>
-    </div>
+  </div>
 </section>
-
 
 {% endblock %}

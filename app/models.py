@@ -43,8 +43,9 @@ class File(models.Model):
 
     def delete(self, *args, **kwargs):
         file_path = os.path.join(settings.MEDIA_ROOT, self.file.name)
+        if os.path.exists(file_path):
+            os.remove(file_path)
         super().delete(*args, **kwargs)
-        os.remove(file_path)
 
 
 class Teacher(models.Model):
@@ -74,8 +75,11 @@ class Teacher(models.Model):
     def delete(self, *args, **kwargs):
         if self.diploma:
             diploma_path = os.path.join(settings.MEDIA_ROOT, self.diploma.name)
-            os.remove(diploma_path)
+            if os.path.exists(diploma_path):
+                os.remove(diploma_path)
+
         if self.image:
             avatar_path = os.path.join(settings.MEDIA_ROOT, self.image.name)
-            os.remove(avatar_path)
+            if os.path.exists(avatar_path):
+                os.remove(avatar_path)
         super().delete(*args, **kwargs)
