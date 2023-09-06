@@ -3,7 +3,7 @@ from pathlib import Path
 from django.contrib.admin.sites import AdminSite
 import os
 
-DEBUG = False
+DEBUG = True
 
 if DEBUG == True:
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
