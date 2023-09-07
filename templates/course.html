@@ -8,7 +8,7 @@
   </select>
 
   {% if request.user.is_authenticated %}
-    <a href="{% url 'upload' %}" class="contact">
+    <a href="{% url 'upload' %}?next={{ request.path }}" class="contact">
       Құжаттарды еңгізу
     </a>
   {% endif %}
@@ -28,28 +28,62 @@
       <td>
         <a href="{{ file.file.url }}" download> <button><i class="fa-solid fa-download"></i></button></a>
         {% if request.user.is_authenticated %}
-        <a href="{% url 'update_file' file.id %}"><button class="update_file"><i class="fa-solid fa-pencil"></i></button></a>
-        <a href="{% url 'delete_file' file.id %}"><button class="delete_file"><i class="fa-solid fa-trash"></i></button></a>
+        <a href="{% url 'update_file' file.id %}?next={{ request.path }}"><button class="update_file"><i class="fa-solid fa-pencil"></i></button></a>
+        <a href="{% url 'delete_file' file.id %}?next={{ request.path }}"><button class="delete_file"><i class="fa-solid fa-trash"></i></button></a>
         {% endif %}
       </td>
     </tr>
     {% endfor %}
     <tr>
-      <td colspan="3">
+      <td class="pagination" colspan="3">
         {% if page_obj.has_previous %}
-        <a {% if request.GET.block %}href="?block={{request.GET.block}}&page={{page_obj.previous_page_number}}" {% else %} href="?page={{page_obj.previous_page_number}}"
+          <a  
+            {% if request.GET.block %}
+              href="?block={{request.GET.block}}&page={{page_obj.previous_page_number}}" 
+            {% else %}
+              href="?page={{page_obj.previous_page_number}}" 
+            {% endif %}
+            style="color: #5454d4; 
+            text-decoration: none; 
+            font-size: 24px; 
+            font-weight: 900;">
+              <
+          </a>
         {% endif %}
-        style="color: #5454d4; text-decoration: none; font-size: 24px; font-weight: 900;"><</a>
-            {% endif %}
-            <span style="margin-inline: 15px;">{{page_obj.number}} бет {{page_obj.paginator.num_pages}} беттен</span>
-            {% if page_obj.has_next %}
-            <a {% if request.GET.block %}href="?block={{request.GET.block}}&page={{page_obj.next_page_number}}"  {% else %} href="?page={{page_obj.next_page_number}}" {% endif %}
-            style="color: #5454d4; text-decoration: none; font-size: 24px; font-weight: 900;">></a>
-            {% endif %}
+
+        <span style="margin-inline: 15px;">
+          {{page_obj.number}} бет {{page_obj.paginator.num_pages}} беттен
+        </span>
+
+        {% if page_obj.has_next %}
+        <a 
+          {% if request.GET.block %}
+            href="?block={{request.GET.block}}&page={{page_obj.next_page_number}}" 
+          {% else %}
+            href="?page={{page_obj.next_page_number}}" 
+          {% endif %}
+          style="color: #5454d4; 
+          text-decoration: none; 
+          font-size: 24px; 
+          font-weight: 900;">
+          >
+        </a>
+        {% endif %}
+        <span style="margin-inline: 15px;">
+          <input placeholder="Бетке өту:" id="exact-page" name="exact-page" min="1" max="{{ page_obj.paginator.num_pages }}">
+          <button onclick="goToExactPage()"><i class="fa-solid fa-arrow-up"></i></button>
+        </span>
       </td>
-  </tr>
+    </tr>
   </tbody>
 </table>
+<script>
+  function goToExactPage() {
+      const exactPage = document.getElementById("exact-page").value;
+      const url = "{% if request.GET.block %}?block={{ request.GET.block }}{% endif %}?page=" + exactPage;
+      window.location.href = url;
+  }
+</script>
 
 {% endblock %}
 

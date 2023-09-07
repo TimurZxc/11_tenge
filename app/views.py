@@ -39,9 +39,26 @@ class UploadFile(generic.CreateView):
     template_name = 'upload.html'
     success_url = reverse_lazy('all_files')
     
-def search(request):
+    def get_success_url(self):  
+        next_url = self.request.GET.get('next')
+        searched = self.request.GET.get('searched')
+        if next_url:
+            if searched:
+                return f"{next_url}?searched={searched}"
+            return next_url
+        else:
+            return reverse('all_files')
+    
+def search(request): 
     if request.method == "POST":
         searched = request.POST['searched']
+        searched_files = File.objects.filter(name__contains = searched)
+        return render(request, 'searched_page.html', {'searched': searched, 'searched_files': searched_files})
+    elif request.method == "GET":
+        if request.GET.get('searched'):
+            searched = request.GET.get('searched')
+        else:
+            searched = ''
         searched_files = File.objects.filter(name__contains = searched)
         return render(request, 'searched_page.html', {'searched': searched, 'searched_files': searched_files})
     else:
@@ -286,6 +303,7 @@ class AllFiles(generic.ListView):
 
     def get_queryset(self):
         queryset = File.objects.filter(tag='common')
+        queryset = File.objects.order_by('-id')
         block = self.request.GET.get('block')
         if block:
             queryset = queryset.filter(block=str(block))
@@ -306,12 +324,30 @@ class DeleteTeacher(LoginRequiredMixin, generic.DeleteView):
 class DeleteFile(LoginRequiredMixin, generic.DeleteView):
     model = File
     template_name='delete_file.html'
-    success_url = reverse_lazy('all_files')
+
+    def get_success_url(self):  
+        next_url = self.request.GET.get('next')
+        searched = self.request.GET.get('searched')
+        if next_url:
+            if searched:
+                return f"{next_url}?searched={searched}"
+            return next_url
+        else:
+            return reverse('all_files')
 
 class FileUpdateView(LoginRequiredMixin, generic.UpdateView):
     form_class = FileForm
     template_name = 'file_update.html' 
-    success_url = reverse_lazy('all_files')  
+
+    def get_success_url(self):  
+        next_url = self.request.GET.get('next')
+        searched = self.request.GET.get('searched')
+        if next_url:
+            if searched:
+                return f"{next_url}?searched={searched}"
+            return next_url
+        else:
+            return reverse('all_files')
 
     def form_valid(self, form):
         instance = form.save(commit=False)
@@ -328,6 +364,7 @@ class TeacherUpdateView(LoginRequiredMixin, generic.UpdateView):
         teacher = get_object_or_404(Teacher, pk=pk)
         form = TeacherForm(instance=teacher)
         return render(request, self.template_name, {'form': form, 'teacher': teacher})
+
 
     def post(self, request, pk):
         teacher = get_object_or_404(Teacher, pk=pk)

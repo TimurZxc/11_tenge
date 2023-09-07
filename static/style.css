@@ -741,7 +741,24 @@ table {
   border: none;
   transition: 0.5s;
 }
-
+.upload a{
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+#exact-page{
+  padding: 4px 10px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  background-color: #99999951;
+  caret-color: white;
+  color: white;
+}
+.pagination input{
+  width: 120px;
+}
 .sure {
   position: fixed;
   height: 100vh;
@@ -905,6 +922,9 @@ table {
 }
 
 @media (max-width:450px) {
+  .pagination input{
+    margin-top: 10px;
+  }
   .upload table tbody tr{
     display: flex;
     flex-direction: column;

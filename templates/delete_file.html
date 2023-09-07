@@ -5,8 +5,14 @@
     <h3>Сіз "{{ object }}" файлды жойғыңыз келетініне сенімдісіз бе?</h3>
     {{ form }}
     <div style="display: flex; gap: 50px; align-items: center;">
-        <a href="{% url 'all_files' %}" class="contact">Бас тарту</a>
+        <a href="#" class="contact" id="cancel-link">Бас тарту</a>
         <input type="submit" value="Иә, жою" class="confirm">
     </div>
 </form>
+<script>
+    document.getElementById('cancel-link').addEventListener('click', function (event) {
+        event.preventDefault();
+        window.history.back();
+    });
+</script>
 {%  endblock %}
