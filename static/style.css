@@ -564,7 +564,13 @@ table {
   font-weight: 400;
   gap:15px;
 }
-
+.info span h3{
+  background-color: #5454d4;
+  color: white;
+  padding: 0 6px;
+  font-size: 18px;
+  border-radius: 5px;
+}
 .pages{
   margin: 0 auto 40px auto;
   width: fit-content;
