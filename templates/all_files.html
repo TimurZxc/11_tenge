@@ -33,8 +33,8 @@
       <td>
         <a href="{{ file.file.url }}" download> <button><i class="fa-solid fa-download"></i></button></a>
         {% if request.user.is_authenticated %}
-        <a href="{% url 'update_file' file.id %}?next={{ request.path }}"><button class="update_file"><i class="fa-solid fa-pencil"></i></button></a>
-        <a href="{% url 'delete_file' file.id %}?next={{ request.path }}"><button class="delete_file"><i class="fa-solid fa-trash"></i></button></a>
+        <a href="{% url 'update_file' file.id %}?next={{ request.path }}&page={{ request.GET.page }}"><button class="update_file"><i class="fa-solid fa-pencil"></i></button></a>
+        <a href="{% url 'delete_file' file.id %}?next={{ request.path }}&page={{ request.GET.page }}"><button class="delete_file"><i class="fa-solid fa-trash"></i></button></a>
         {% endif %}
       </td>
     </tr>
@@ -85,7 +85,7 @@
 <script>
   function goToExactPage() {
       const exactPage = document.getElementById("exact-page").value;
-      const url = "{% if request.GET.block %}?block={{ request.GET.block }}{% endif %}?page=" + exactPage;
+      const url = "{% if request.GET.block %}?block={{ request.GET.block }}&page={% else %}?page={% endif %}" + exactPage;
       window.location.href = url;
   }
 </script>

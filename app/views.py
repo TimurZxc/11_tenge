@@ -328,9 +328,12 @@ class DeleteFile(LoginRequiredMixin, generic.DeleteView):
     def get_success_url(self):  
         next_url = self.request.GET.get('next')
         searched = self.request.GET.get('searched')
+        page = self.request.GET.get('page')
         if next_url:
             if searched:
                 return f"{next_url}?searched={searched}"
+            if page:
+                return f"{next_url}?page={page}"
             return next_url
         else:
             return reverse('all_files')
@@ -342,9 +345,12 @@ class FileUpdateView(LoginRequiredMixin, generic.UpdateView):
     def get_success_url(self):  
         next_url = self.request.GET.get('next')
         searched = self.request.GET.get('searched')
+        page = self.request.GET.get('page')
         if next_url:
             if searched:
                 return f"{next_url}?searched={searched}"
+            if page:
+                return f"{next_url}?page={page}"
             return next_url
         else:
             return reverse('all_files')
