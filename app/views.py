@@ -378,3 +378,151 @@ def custom_404(request, exception):
     return render(request, '404.html', status=404)
 
 
+class Docs(generic.ListView):
+    model = File
+    template_name = 'docs.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+    
+class Y2020_2021(generic.ListView):
+    model = File
+    template_name = '2020-2021.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='2020-2021 ж')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+    
+class Y2020_2021_tech_cards(generic.ListView):
+    model = File
+    template_name = '2020-2021 ж жеке даму картасы.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='2020-2021 ж жеке даму картасы')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+    
+#2020-2021 ж Индикаторлар
+
+class Y2020_2021_indicators(generic.ListView):
+    model = File
+    template_name = '2020-2021 ж Индикаторлар.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='2020-2021 ж Индикаторлар')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+    
+#№1 Балбөбек тобы
+class Y2020_2021_indicators_1_bal_tob(generic.ListView):
+    model = File
+    template_name = '№1 Балбөбек тобы.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='№1 Балбөбек тобы')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+
+#№2 Еркелер тобы
+
+class Y2020_2021_indicators_2_erk_tob(generic.ListView):
+    model = File
+    template_name = '№2 Еркелер тобы.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='№2 Еркелер тобы')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+    
+
+#№3 Ботақан тобы
+
+class Y2020_2021_indicators_3_bot_tob(generic.ListView):
+    model = File
+    template_name = '№3 Ботақан тобы.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='№3 Ботақан тобы')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+    
+
+#№4 Құлыншақ тобы
+
+class Y2020_2021_indicators_4_qul_tob(generic.ListView):
+    model = File
+    template_name = '№4 Құлыншақ тобы.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='№4 Құлыншақ тобы')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+    
+#№5 Балапан тобы
+class Y2020_2021_indicators_5_bal_tob(generic.ListView):
+    model = File
+    template_name = '№5 Балапан тобы.html'
+    context_object_name = 'files'
+    paginate_by = 10
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag='№5 Балапан тобы')
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+
+    

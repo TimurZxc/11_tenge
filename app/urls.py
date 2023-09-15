@@ -26,4 +26,14 @@ urlpatterns = [
     path('search/', views.search, name='search'),
     path('file/<int:pk>/update/', FileUpdateView.as_view(), name='update_file'),
     path('teacher/<int:pk>/update/', TeacherUpdateView.as_view(), name='update_teacher'),
+
+    path('docs/', Docs.as_view(), name='docs'),
+    path('docs/2020-2021/', Y2020_2021.as_view(), name='2020-2021'),
+    path('docs/2020-2021/tech-cards/', Y2020_2021_tech_cards.as_view(), name='2020-2021_tech_cards'),
+    path('docs/2020-2021/indicators/', Y2020_2021_indicators.as_view(), name='2020-2021_indicators'),
+    path('docs/2020-2021/indicators/1_bal_tob/', Y2020_2021_indicators_1_bal_tob.as_view(), name='Y2020_2021_indicators_1_bal_tob'),
+    path('docs/2020-2021/indicators/2_erk_tob/', Y2020_2021_indicators_2_erk_tob.as_view(), name='Y2020_2021_indicators_2_erk_tob'),
+    path('docs/2020-2021/indicators/3_bot_tob/', Y2020_2021_indicators_3_bot_tob.as_view(), name='Y2020_2021_indicators_3_bot_tob'),
+    path('docs/2020-2021/indicators/4_qul_tob/', Y2020_2021_indicators_4_qul_tob.as_view(), name='Y2020_2021_indicators_4_qul_tob'),
+    path('docs/2020-2021/indicators/5_bal_tob/', Y2020_2021_indicators_5_bal_tob.as_view(), name='Y2020_2021_indicators_5_bal_tob'),
 ] 

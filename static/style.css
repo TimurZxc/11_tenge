@@ -233,11 +233,11 @@ td {
 }
 .table-head {
   color: white;
-  text-align: left;
   background-color: #5454d4;
   z-index: 2;
 }
 tr > td > a{
+  text-align: left;
   color: white;
   text-decoration: none;
 }
@@ -279,12 +279,10 @@ tbody tr td button:hover{
   transition: 0.5s;
 }
 
-table > tbody > tr > th {
-  text-align: center;
-}
+
 
 table {
-  text-align: center;
+  text-align: left;
 }
 
 .main-section {
@@ -564,7 +562,13 @@ table {
   font-weight: 400;
   gap:15px;
 }
-
+.info span h3{
+  background-color: #5454d4;
+  color: white;
+  padding: 0 6px;
+  font-size: 18px;
+  border-radius: 5px;
+}
 .pages{
   margin: 0 auto 40px auto;
   width: fit-content;
