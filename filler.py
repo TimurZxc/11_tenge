@@ -1,41 +1,43 @@
+from django.conf import settings
 import os
 import django
 
-# Set the DJANGO_SETTINGS_MODULE environment variable
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "root.settings")  # Replace with your actual project's settings module
-
-# Manually configure Django settings
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "root.settings")
 django.setup()
 
-# Now you can import your Django models and use the settings
-from app.models import File  # Replace 'your_app' with the actual name of your Django app
-from django.conf import settings
-
-# Define the folder path where your PDF files are located
-pdf_folder = 'C:/Users/Timur/Desktop/files'
-
-
-# Define default values
+from app.models import File
+pdf_folder = 'media\pdf'
 default_tag = 'common'
 default_year = '2020-2021'
 default_block = 2
 
-# Iterate through the files in the folder
-for filename in os.listdir(pdf_folder):
-    if filename.endswith('.pdf'):
-        # Extract the name without the file extension
-        name = os.path.splitext(filename)[0]
-
-        # Check if the year is present in the filename
-        for year_choice, year_label in File.year_choices:
-            if year_choice in name:
-                year = year_choice
-                break
-        else:
-            year = default_year
-
-        # Create a File object and save it to the database
-        file_instance = File(name=name, file=os.path.join('pdf', filename), tag=default_tag, year=year, block=default_block)
-        file_instance.save()
+for root, _, files in os.walk(pdf_folder):
+    for filename in files:
+        if filename.endswith('.pdf'):
+            # Get the relative path from pdf_folder to the current file
+            relative_path = os.path.relpath(os.path.join(root, filename), pdf_folder)
+            
+            # Extract the parts of the relative path
+            path_parts = os.path.dirname(relative_path).split(os.path.sep)
+            
+            # Use the parts of the relative path to set tag and file
+            tag = path_parts[-1]  # Use the directory structure as the tag
+            if tag == ('' or None):
+                tag = default_tag
+            file_path = os.path.join('pdf', relative_path)  # Relative path to the PDF file
+            
+            # Check if the year is in the filename or use the default
+            for year_choice, _ in File.year_choices:
+                if year_choice in filename:
+                    year = year_choice
+                    break
+            else:
+                year = default_year
+            
+            # Create and save the File instance
+            name = os.path.splitext(filename)[0]
+            file_instance = File(
+                name=name, file=file_path, tag=tag, year=year, block=default_block)
+            file_instance.save()
 
 print("Files added to the database successfully.")

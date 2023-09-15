@@ -26,4 +26,14 @@ urlpatterns = [
     path('search/', views.search, name='search'),
     path('file/<int:pk>/update/', FileUpdateView.as_view(), name='update_file'),
     path('teacher/<int:pk>/update/', TeacherUpdateView.as_view(), name='update_teacher'),
+
+    path('docs/', Docs.as_view(), name='docs'),
+    path('docs/2020-2021/', Docs.as_view(template_name = '2020-2021.html', tag='2020-2021 ж'), name='2020-2021'),
+    path('docs/2020-2021/tech-cards/', Docs.as_view(template_name = '2020-2021 ж жеке даму картасы.html', tag='2020-2021 ж жеке даму картасы'), name='2020-2021_tech_cards'),
+    path('docs/2020-2021/indicators/', Docs.as_view(template_name = '2020-2021 ж Индикаторлар.html', tag='2020-2021 ж Индикаторлар'), name='2020-2021_indicators'),
+    path('docs/2020-2021/indicators/1_bal_tob/', Docs.as_view(template_name = '№1 Балбөбек тобы.html', tag='№1 Балбөбек тобы'), name='Y2020_2021_indicators_1_bal_tob'),
+    path('docs/2020-2021/indicators/2_erk_tob/', Docs.as_view(template_name = '№2 Еркелер тобы.html', tag='№2 Еркелер тобы'), name='Y2020_2021_indicators_2_erk_tob'),
+    path('docs/2020-2021/indicators/3_bot_tob/', Docs.as_view(template_name = '№3 Ботақан тобы.html', tag='№3 Ботақан тобы'), name='Y2020_2021_indicators_3_bot_tob'),
+    path('docs/2020-2021/indicators/4_qul_tob/', Docs.as_view(template_name = '№4 Құлыншақ тобы.html', tag='№4 Құлыншақ тобы'), name='Y2020_2021_indicators_4_qul_tob'),
+    path('docs/2020-2021/indicators/5_bal_tob/', Docs.as_view(template_name = '№5 Балапан тобы.html', tag='№5 Балапан тобы'), name='Y2020_2021_indicators_5_bal_tob'),
 ] 

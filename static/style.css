@@ -233,11 +233,11 @@ td {
 }
 .table-head {
   color: white;
-  text-align: left;
   background-color: #5454d4;
   z-index: 2;
 }
 tr > td > a{
+  text-align: left;
   color: white;
   text-decoration: none;
 }
@@ -279,12 +279,10 @@ tbody tr td button:hover{
   transition: 0.5s;
 }
 
-table > tbody > tr > th {
-  text-align: center;
-}
+
 
 table {
-  text-align: center;
+  text-align: left;
 }
 
 .main-section {
