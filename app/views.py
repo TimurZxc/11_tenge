@@ -392,11 +392,7 @@ class Docs(generic.ListView):
 
     def get_queryset(self) -> QuerySet[Any]:
         queryset = File.objects.filter(tag=self.tag)
-        block = self.request.GET.get('block')
-        if block:
-            queryset = queryset.filter(block=str(block))
-        else:
-            queryset = queryset.filter(block='1')
+        queryset = queryset.filter(block='2')
         return queryset
     
     

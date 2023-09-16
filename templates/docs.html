@@ -2,11 +2,6 @@
 
 {% block content %}
 <div style="display: flex; justify-content: space-between; align-items: center;">
-  <select name="block" id="block" class="custom-select">
-    <option value="1" {% if request.GET.block == "1" %}selected{% endif %}>1-ші блок</option>
-    <option value="2" {% if request.GET.block == "2" %}selected{% endif %}>2-ші блок</option>
-  </select>
-
   {% if request.user.is_authenticated %}
     <a href="{% url 'upload' %}?next={{ request.path }}" class="contact">
       Құжаттарды еңгізу
@@ -18,96 +13,95 @@
   <tbody>
     <tr class="table-head">
       <th>Құжатың атауы</th>
-      <th>Жылы</th>
       <th>Жүктеу</th>
     </tr>
     {% block links %}
     <tr>
-      <td colspan="3"><a href="{% url '2020-2021 ж_url' %}">2020-2021 ж</a></td>
+      <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url '2020-2021 ж_url' %}">2020-2021 ж</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url '2021-2022 ж_url' %}">2021-2022 ж</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url '2021-2022 ж_url' %}">2021-2022 ж</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url '2022-2023 ж_url' %}">2022-2023 ж</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url '2022-2023 ж_url' %}">2022-2023 ж</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Айлық жоспар әдіскер_url' %}">Айлық жоспар әдіскер</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Айлық жоспар әдіскер_url' %}">Айлық жоспар әдіскер</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Балабақша күн тәртібі_url' %}">Балабақша күн тәртібі</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Балабақша күн тәртібі_url' %}">Балабақша күн тәртібі</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Балалар континеті  3 жылдық_url' %}">Балалар континеті  3 жылдық</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Балалар континеті  3 жылдық_url' %}">Балалар континеті  3 жылдық</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Бөбекжай құжаттары_url' %}">Бөбекжай құжаттары</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Бөбекжай құжаттары_url' %}">Бөбекжай құжаттары</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Бөбекжайдың 2020-21ж, 2021-22ж, 2022-23ж  жылдық жоспарлары_url' %}">Бөбекжайдың 2020-21ж, 2021-22ж, 2022-23ж  жылдық жоспарлары</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Бөбекжайдың 2020-21ж, 2021-22ж, 2022-23ж  жылдық жоспарлары_url' %}">Бөбекжайдың 2020-21ж, 2021-22ж, 2022-23ж  жылдық жоспарлары</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Вариативтік компонент 2021-2022_url' %}">Вариативтік компонент 2021-2022</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Вариативтік компонент 2021-2022_url' %}">Вариативтік компонент 2021-2022</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'диплом_url' %}">диплом</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'диплом_url' %}">диплом</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Курстан өткен педагогтер_url' %}">Курстан өткен педагогтер</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Курстан өткен педагогтер_url' %}">Курстан өткен педагогтер</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Педагогтардың санаттары_url' %}">Педагогтардың санаттары</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Педагогтардың санаттары_url' %}">Педагогтардың санаттары</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Педагогтер туралы мәлімет_url' %}">Педагогтер туралы мәлімет</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Педагогтер туралы мәлімет_url' %}">Педагогтер туралы мәлімет</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Педагогтердің марапаттары_url' %}">Педагогтердің марапаттары</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Педагогтердің марапаттары_url' %}">Педагогтердің марапаттары</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Сабақ кесте 202-21ж, 2021-22ж, 2022-23ж_url' %}">Сабақ кесте 202-21ж, 2021-22ж, 2022-23ж</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Сабақ кесте 202-21ж, 2021-22ж, 2022-23ж_url' %}">Сабақ кесте 202-21ж, 2021-22ж, 2022-23ж</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Сан книшка_url' %}">Сан книшка</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Сан книшка_url' %}">Сан книшка</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Сапалық құрам 2020-2023ж аралығы_url' %}">Сапалық құрам 2020-2023ж аралығы</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Сапалық құрам 2020-2023ж аралығы_url' %}">Сапалық құрам 2020-2023ж аралығы</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Тәрбиеленушілер жетістіктері_url' %}">Тәрбиеленушілер жетістіктері</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Тәрбиеленушілер жетістіктері_url' %}">Тәрбиеленушілер жетістіктері</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Тәрбиеленушілердің топқа бөліну саны_url' %}">Тәрбиеленушілердің топқа бөліну саны</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Тәрбиеленушілердің топқа бөліну саны_url' %}">Тәрбиеленушілердің топқа бөліну саны</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Циклограмма  2020-2021ж_url' %}">Циклограмма  2020-2021ж</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Циклограмма  2020-2021ж_url' %}">Циклограмма  2020-2021ж</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Әдіскер мониторинг_url' %}">Әдіскер мониторинг</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Әдіскер мониторинг_url' %}">Әдіскер мониторинг</a></td>
     </tr>
     
     <tr>
-        <td colspan="3"><a href="{% url 'Әдіскер циклограмма 3 жыл_url' %}">Әдіскер циклограмма 3 жыл</a></td>
+        <td colspan="3"><i class="fas fa-folder"></i>  <a href="{% url 'Әдіскер циклограмма 3 жыл_url' %}">Әдіскер циклограмма 3 жыл</a></td>
     </tr>
     {% endblock %}
     
@@ -115,7 +109,6 @@
     {% for file in files %}
     <tr>
       <td><a href="{{ file.file.url }}" target="_blank">{{ file.name }}</a></td>
-      <td>{{ file.year }}</td>
       <td>
         <a href="{{ file.file.url }}" download> <button><i class="fa-solid fa-download"></i></button></a>
         {% if request.user.is_authenticated %}
