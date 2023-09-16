@@ -388,7 +388,6 @@ class Docs(generic.ListView):
     model = File
     template_name = 'docs.html'
     context_object_name = 'files'
-    paginate_by = 10
     tag = ''
 
     def get_queryset(self) -> QuerySet[Any]:
@@ -399,4 +398,24 @@ class Docs(generic.ListView):
         else:
             queryset = queryset.filter(block='1')
         return queryset
+    
+    
+class Docs_test(generic.ListView):
+    model = File
+    template_name = '.html'
+    context_object_name = 'files'
+    tag = ''
+
+    def get_queryset(self) -> QuerySet[Any]:
+        queryset = File.objects.filter(tag=self.tag)
+        block = self.request.GET.get('block')
+        if block:
+            queryset = queryset.filter(block=str(block))
+        else:
+            queryset = queryset.filter(block='1')
+        return queryset
+    
+
+    
+    
     
