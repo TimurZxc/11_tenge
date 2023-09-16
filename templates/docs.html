@@ -1,7 +1,7 @@
 {% extends 'base.html' %} 
 
 {% block content %}
-<div style="display: flex; justify-content: space-between; align-items: center;">
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom:10px">
   {% if request.user.is_authenticated %}
     <a href="{% url 'upload' %}?next={{ request.path }}" class="contact">
       Құжаттарды еңгізу
