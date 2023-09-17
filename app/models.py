@@ -14,6 +14,7 @@ class File(models.Model):
 
     tag_choices = [
         ('common', 'Анықталмаған'),
+        ('','Жалпы'),
         ('schedule', 'Кесте'),
         ('course', 'Курс'),
         ('methodist_cyclogram', 'Әдіскер циклограмасы'),
